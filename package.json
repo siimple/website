@@ -1,0 +1,17 @@
+{
+  "name": "siimple-website",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Siimple website",
+  "author": "Josemi Juanes <josemijuanes@gmail.com>",
+  "license": "MIT",
+  "homepage": "http://siimple.juanes.xyz/",
+  "repository": { "type": "git", "url": "git://github.com/siimple/website.git" },
+  "dependencies":
+  {
+    "gulp": "^3.9.1",
+    "gulp-ejs": "^2.3.0",
+    "gulp-filter": "^3.0.1",
+    "gulp-sass": "^3.0.0"
+  }
+}
