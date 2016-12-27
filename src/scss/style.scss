@@ -109,7 +109,7 @@ body
     display: block;
 
     //Size
-    width: 100%;
+    width: 1180px;
 
     //Font
     @include siimple-font;
@@ -118,6 +118,6 @@ body
     background-color: $siimple-grey;
 
     //Padding
-    padding: { top: 50px; bottom: 80px; left: 0px; right: 0px; }
+    padding: { top: 50px; bottom: 80px; left: calc(50% - 590px); right: calc(50% - 590px); }
   }
 }
