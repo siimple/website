@@ -10,7 +10,7 @@ var del = require('del');
 gulp.task('clean', function()
 {
   //Clean the public folder
-  del.sync([ './publc/**/*', '!./public' ]);
+  del.sync([ './public/**/*' ]);
 });
 
 //Build the ejs files
