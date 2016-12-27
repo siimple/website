@@ -6,13 +6,15 @@
   "author": "Josemi Juanes <josemijuanes@gmail.com>",
   "license": "MIT",
   "homepage": "http://siimple.juanes.xyz/",
-  "repository": { "type": "git", "url": "git://github.com/siimple/website.git" },
-  "dependencies":
-  {
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/siimple/website.git"
+  },
+  "dependencies": {
+    "del": "^2.2.2",
     "gulp": "^3.9.1",
     "gulp-ejs": "^2.3.0",
-    "gulp-filter": "^4.0.0",
-    "gulp-sass": "^3.0.0",
-    "gulp-rename": "1.2.2"
+    "gulp-rename": "1.2.2",
+    "gulp-sass": "^3.0.0"
   }
 }
