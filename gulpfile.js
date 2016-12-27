@@ -3,6 +3,7 @@ var fs = require('fs');
 var gulp = require('gulp');
 var ejs = require("gulp-ejs");
 var filter = require('gulp-filter');
+var rename = require('gulp-rename');
 var sass = require('gulp-sass');
 
 //Build the ejs files
@@ -12,10 +13,13 @@ gulp.task('build:ejs', function()
   gulp.src('./src/**/*.ejs')
 
   //Ignore layout files
-  .pipe(filter([ '!_footer.ejs', '!_header.ejs' ]))
+  .pipe(filter([ '**/*', '!_footer.ejs', '!_header.ejs' ]))
 
   //Call the ejs builder
   .pipe(ejs({ }))
+
+  //Rename the ejs files
+  .pipe(rename({ extname: '.html' }))
 
   //Output path
   .pipe(gulp.dest('./public/'));
