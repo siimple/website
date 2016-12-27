@@ -1,0 +1,123 @@
+//Import siimple
+@import "../../../siimple-siimple/src/_mixins.scss";
+
+//Body style
+body
+{
+  //Font
+  @include siimple-font; font-size: 16px; font-weight: normal;
+
+  //Default text color
+  color: $siimple-navy;
+
+  //Padding
+  padding: { top: 0px; bottom: 0px; right: 0px; left: 0px; }
+
+  //Margin
+  margin: { top: 0px; bottom: 0px; left: 0px; right: 0px; }
+}
+
+//Website class
+.website
+{
+  //Menu
+  &-menu
+  {
+    //Display
+    display: block; position: absolute; top: 0px; left: 0px; z-index: 9999;
+
+    //Size
+    width: 1180px; height: 60px;
+
+    //Padding
+    padding: { left: calc(50% - 590px); right: calc(50% - 590px); top: 0px; bottom: 0px; }
+
+    //Links
+    &-link
+    {
+      //Display
+      display: inline-block; float: right; transition: background-color 0.3s;
+
+      //Size
+      height: 40px; line-height: 40px;
+
+      //Boder radius
+      border-radius: 5px;
+
+      //Font
+      font-size: 15px; font-weight: normal; color: $siimple-white; text-decoration: none;
+
+      //Margin
+      margin: { top: 10px; right: 0px; left: 5px; }
+
+      //Padding
+      padding: { left: 10px; right: 10px; top: 0px; bottom: 0px; }
+
+      //Hover
+      &:hover { background-color: $siimple-white; color: $siimple-navy; text-decoration: none; }
+    }
+  }
+
+  //Header
+  &-header
+  {
+    //Display
+    display: block;
+
+    //Size
+    width: 1180px;
+
+    //Font
+    @include siimple-font;
+
+    //Padding
+    padding: { left: calc(50% - 590px); right: calc(50% - 590px); top: 140px; bottom: 60px; }
+
+    //Margin
+    margin: { bottom: 0px; top: 0px; left: 0px; right: 0px; }
+
+    //Title
+    &-title { font-size: 55px; font-weight: bold; margin-bottom: 5px; }
+
+    //Detail
+    &-detail { font-size: 22px; font-weight: normal; }
+
+    //Navy background
+    &--navy { background-color: $siimple-navy; color: $siimple-white; }
+  }
+
+  //Main content
+  &-main
+  {
+    //Style
+    display: block;
+
+    //Size
+    width: 1180px;
+
+    //Margin
+    margin: { left: auto; right: auto; }
+
+    //Padding
+    padding: { left: 0px; right: 0px; top: 20px; bottom: 20px; }
+  }
+
+  //Footer content
+  &-footer
+  {
+    //Display
+    display: block;
+
+    //Size
+    width: 100%;
+
+    //Font
+    @include siimple-font;
+
+    //Background color
+    background-color: $siimple-grey;
+
+    //Padding
+    padding: { top: 50px; bottom: 50px; left: 0px; right: 0px; }
+  }
+}
