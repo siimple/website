@@ -29,7 +29,7 @@ gulp.task('build:ejs', function()
   .pipe(gulp.dest('./public/'));
 
   //Delete the header and the footer files
-  del.sync([ './public/_header.html', './public/_footer.html' ]);
+  //del.sync([ './public/_header.html', './public/_footer.html' ]);
 });
 
 //Build the sass/scss files
