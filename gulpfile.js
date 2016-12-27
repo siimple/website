@@ -2,18 +2,22 @@
 var fs = require('fs');
 var gulp = require('gulp');
 var ejs = require("gulp-ejs");
-var filter = require('gulp-filter');
 var rename = require('gulp-rename');
 var sass = require('gulp-sass');
+var del = require('del');
+
+//Clean the public folder
+gulp.task('clean', function()
+{
+  //Clean the public folder
+  del.sync([ './publc/**/*', '!./public' ]);
+});
 
 //Build the ejs files
 gulp.task('build:ejs', function()
 {
   //Get the source files
   gulp.src('./src/**/*.ejs')
-
-  //Ignore layout files
-  .pipe(filter([ '**/*', '!_footer.ejs', '!_header.ejs' ]))
 
   //Call the ejs builder
   .pipe(ejs({ }))
@@ -23,6 +27,9 @@ gulp.task('build:ejs', function()
 
   //Output path
   .pipe(gulp.dest('./public/'));
+
+  //Delete the header and the footer files
+  del.sync([ './public/_header.html', './public/_footer.html' ]);
 });
 
 //Build the sass/scss files
@@ -40,4 +47,4 @@ gulp.task('build:sass', function()
 
 
 //Default task
-gulp.task('default', [ 'build:ejs', 'build:sass' ]);
+gulp.task('default', [ 'clean', 'build:ejs', 'build:sass' ]);
