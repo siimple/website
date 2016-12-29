@@ -42,9 +42,15 @@ gulp.task('build:sass', function()
   .pipe(sass().on('error', sass.logError))
 
   //Save to the output dir
-  .pipe(gulp.dest('./public/css/'))
+  .pipe(gulp.dest('./public/css/'));
 });
 
+//Copy the siimple code
+gulp.task('copy:siimple', function()
+{
+  //Get the siimple library
+  gulp.src('../siimple-siimple/dist/siimple.css').pipe(gulp.dest('./public/css'));
+});
 
 //Default task
-gulp.task('default', [ 'clean', 'build:ejs', 'build:sass' ]);
+gulp.task('default', [ 'clean', 'build:ejs', 'build:sass', 'copy:siimple' ]);
