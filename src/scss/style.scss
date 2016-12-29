@@ -36,7 +36,7 @@ body
     &-link
     {
       //Display
-      display: inline-block; float: right; transition: background-color 0.3s;
+      display: inline-block; float: right; transition: background-color 0.3s; cursor: pointer;
 
       //Size
       height: 40px; line-height: 40px;
@@ -83,7 +83,7 @@ body
     &-detail { font-size: 22px; font-weight: normal; }
 
     //Navy background
-    &--navy { background-color: $siimple-navy; color: $siimple-white; }
+    &--navy { background-color: $siimple-teal; color: $siimple-white; }
   }
 
   //Main content
@@ -99,7 +99,17 @@ body
     margin: { left: auto; right: auto; }
 
     //Padding
-    padding: { left: 0px; right: 0px; top: 20px; bottom: 20px; }
+    padding: { left: 0px; right: 0px; top: 30px; bottom: 30px; }
+  }
+
+  //Example block
+  &-example
+  {
+    //Display
+    display: block;
+
+    //Margins
+    margin: { top: 0px; bottom: 10px; }
   }
 
   //Footer content
