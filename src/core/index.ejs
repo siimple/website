@@ -1,0 +1,95 @@
+<!-- Include header -->
+<% include ../_header.ejs %>
+
+<!-- Core style -->
+<link rel="stylesheet" type="text/css" href="/css/core.css">
+
+<!-- Title -->
+<title>Siimple Core documentation</title>
+<!-- Header -->
+<div class="website-header website-header--navy">
+  <!-- Title -->
+  <div class="website-header-title">siimple-core</div>
+  <!-- Detail -->
+  <div class="website-header-detail">Documentation for core version <b>v2.0.0</b></div>
+</div>
+<!-- Main content -->
+<div class="website-main">
+  <p class="siimple-p">
+    <b>Siimple</b> provides a small, light, responsive and clean framework, build in ~250 lines of code.
+    Also, the framework comes with a ~6KB minimized version.
+  </p>
+  <!-- Getting started -->
+  <div class="siimple-h2">Getting started</div>
+  <p class="siimple-p">
+    You must include the <b>Siimple CSS</b> library in each HTML page of your project.
+  </p>
+  <!-- Hosted description -->
+  <div class="siimple-h4">Hosted</div>
+  <p class="siimple-p">
+    Just add the following <code class="siimple-code">&lt;link&gt;</code> element in your HTML file:
+  </p>
+  <pre class="siimple-pre">&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/siimple/VERSION/siimple.min.css"&gt;</pre>
+  <p class="siimple-p">
+    Replace <code class="siimple-code">VERSION</code> with the latest version of <b>Siimple</b>. You can check all available versions
+    <a href="https://www.jsdelivr.com/projects/siimple" class="siimple-a" target="_blank">on the jsDelivr website</a>.
+  </p>
+  <!-- Dowmload from github -->
+  <div class="siimple-h4">Download from GitHub</div>
+  <p class="siimple-p">
+    You can visit the repository hosted on <a href="https://github.com/siimple/siimple" class="siimple-link" target="_blank">GitHub</a> and download the
+    latest version from the <a href="https://github.com/siimple/siimple/releases" class="siimple-link" target="_blank">releases page</a>.
+    You can find the CSS files on the <code class="siimple-code">./dist/</code> folder, so you can copy them to your project.
+  </p>
+  <!-- Install with npm or bower -->
+  <div class="siimple-h4">Install using NPM or Bower</div>
+  <p class="siimple-p">
+    <b>Siimple</b> is also hosted on <a href="https://www.npmjs.com/package/siimple" class="siimple-a" target="_blank">npm</a> and
+    <a href="http://bower.io" class="siimple-a" target="_blank">bower</a>, so you can use the npm's CLI to install the framework on your project
+    running the following command:
+  </p>
+  <pre class="siimple-pre">npm install siimple --save</pre>
+  <p class="siimple-p">Or using the bower's CLI running the following command: </p>
+  <pre class="siimple-pre">bower install siimple</pre>
+
+  <!-- Spearator -->
+  <br><br>
+
+  <!-- Reference -->
+  <div class="siimple-h2">Reference</div>
+  <p class="siimple-p">
+    On <b>v2.0.0</b>, each element of the Siimple library comes with the word <code class="siimple-code">siimple</code> and followed
+    by one dash and the element name, ie <code class="siimple-code">siimple-[ELEMENT]</code>, and each attribute
+    (like colors, disabled...) comes with double dash and followed by the attribute name, ie
+    <code class="siimple-code">siimple-[ELEMENT]--[ATTRIBUTE]</code>.
+  </p>
+  <p class="siimple-p">
+    For example, if you want to create a blue button, you must add <code class="siimple-code">siimple-btn</code> and
+    <code class="siimple-code">siimple-btn--blue</code> class to your <code class="siimple-code">div</code> element:
+  </p>
+  <div align="center" class="core-example">
+    <div class="siimple-btn siimple-btn--blue">My button</div>
+  </div>
+  <pre class="siimple-pre">&lt;div class="siimple-btn siimple-btn--blue"&gt;My button&lt;/div&gt;</pre>
+
+  <!-- Colors -->
+  <% include _colors.ejs %>
+
+  <!-- Typography -->
+  <% include _typography.ejs %>
+
+  <!-- Buttons -->
+  <% include _btn.ejs %>
+
+  <!-- Alerts -->
+  <% include _alert.ejs %>
+
+  <!-- Form -->
+  <%include _form.ejs %>
+
+  <!-- Grid -->
+  <% include _grid.ejs %>
+</div>
+
+<!-- Include footer -->
+<% include ../_footer.ejs %>
