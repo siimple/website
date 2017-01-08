@@ -100,9 +100,20 @@ body
 
     //Padding
     padding: { left: 0px; right: 0px; top: 30px; bottom: 30px; }
-  }  
+  }
 
   //Contribute
+  &-contribute
+  {
+    //Display
+    display: block;
+
+    //Width
+    width: 1180px;
+
+    //Padding
+    padding: { top: 50px; bottom: 80px; left: calc(50% - 590px); right: calc(50% - 590px); }
+  }
 
   //Footer content
   &-footer
