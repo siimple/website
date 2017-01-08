@@ -1,0 +1,48 @@
+//Core class
+.core
+{
+  //Colors blocks
+  &-colors
+  {
+    //Display
+    display: inline-block;
+
+    //Size
+    width: 216px;
+
+    //Border radius
+    border-radius: 5px;
+
+    //Text
+    @include siimple-font; font-size: 15px; font-weight: bold; text-align: center;
+
+    //Padding
+    padding: { top: 20px; bottom: 20px; }
+
+    //Margin
+    margin: { top: 0px; bottom: 10px; left: 10px; right: 0px; }
+  }
+
+  //Grid example
+  &-grid
+  {
+    //Background color
+    background-color: $siimple-grey;
+
+    //Border radius
+    border-radius: 5px;
+
+    //Margin
+    margin: { bottom: 5px; }
+  }
+
+  //Example block
+  &-example
+  {
+    //Display
+    display: block;
+
+    //Margins
+    margin: { top: 25px; bottom: 20px; }
+  }
+}
