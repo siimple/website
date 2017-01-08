@@ -36,7 +36,7 @@ body
     &-link
     {
       //Display
-      display: inline-block; float: right; transition: background-color 0.3s; cursor: pointer;
+      display: inline-block; float: right; transition: background-color 0.3s; transition: color 0.3s; cursor: pointer;
 
       //Size
       height: 40px; line-height: 40px;
@@ -100,52 +100,9 @@ body
 
     //Padding
     padding: { left: 0px; right: 0px; top: 30px; bottom: 30px; }
-  }
+  }  
 
-  //Example block
-  &-example
-  {
-    //Display
-    display: block;
-
-    //Margins
-    margin: { top: 25px; bottom: 20px; }
-  }
-
-  //Grid example
-  &-grid
-  {
-    //Background color
-    background-color: $siimple-grey;
-
-    //Border radius
-    border-radius: 5px;
-
-    //Margin
-    margin: { bottom: 5px; } 
-  }
-
-  //Colors blocks
-  &-colors
-  {
-    //Display
-    display: inline-block;
-
-    //Size
-    width: 216px;
-
-    //Border radius
-    border-radius: 5px;
-
-    //Text
-    @include siimple-font; font-size: 15px; font-weight: bold; text-align: center;
-
-    //Padding
-    padding: { top: 20px; bottom: 20px; }
-
-    //Margin
-    margin: { top: 0px; bottom: 10px; left: 10px; right: 0px; }
-  }
+  //Contribute
 
   //Footer content
   &-footer
@@ -165,4 +122,7 @@ body
     //Padding
     padding: { top: 50px; bottom: 80px; left: calc(50% - 590px); right: calc(50% - 590px); }
   }
+
+  //Heart
+  &-heart{ &:after { content: "\2764"; color: #f45660; } }
 }
