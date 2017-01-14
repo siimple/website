@@ -86,7 +86,7 @@ body
     &--teal { background-color: $siimple-teal; color: $siimple-white; }
 
     //Blue background
-    &--blue { background-color: $siimple-blue; color: $siimple-white; } 
+    &--blue { background-color: $siimple-blue; color: $siimple-white; }
   }
 
   //Main content
@@ -134,7 +134,7 @@ body
     background-color: $siimple-grey;
 
     //Padding
-    padding: { top: 50px; bottom: 80px; left: calc(50% - 590px); right: calc(50% - 590px); }
+    padding: { top: 50px; bottom: 100px; left: calc(50% - 590px); right: calc(50% - 590px); }
   }
 
   //Heart
