@@ -17,7 +17,7 @@ gulp.task('clean', function()
 gulp.task('build:ejs', function()
 {
   //Get the source files
-  gulp.src('./src/**/*.ejs')
+  gulp.src('./_pages/**/*.ejs')
 
   //Call the ejs builder
   .pipe(ejs({ }))
@@ -27,16 +27,13 @@ gulp.task('build:ejs', function()
 
   //Output path
   .pipe(gulp.dest('./public/'));
-
-  //Delete the header and the footer files
-  //del.sync([ './public/_header.html', './public/_footer.html' ]);
 });
 
 //Build the sass/scss files
 gulp.task('build:sass', function()
 {
   //Get all the scss files
-  gulp.src('./src/scss/**/*.scss')
+  gulp.src('./_scss/**/*.scss')
 
   //Build the css files
   .pipe(sass().on('error', sass.logError))
