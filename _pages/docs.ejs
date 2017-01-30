@@ -1,19 +1,19 @@
 <!-- Include header -->
-<% include ../_header.ejs %>
+<% include ../_layouts/_header.ejs %>
 
 <!-- Core style -->
 <link rel="stylesheet" type="text/css" href="/css/core.css">
 
 <!-- Title -->
-<title>Siimple Core documentation</title>
+<title>Siimple documentation</title>
 <!-- Header -->
 <div class="website-header website-header--blue">
   <!-- Menu -->
-  <% include ../_menu.ejs %>
+  <% include ../_layouts/_menu.ejs %>
   <!-- Title -->
-  <div class="website-header-title">siimple-core</div>
+  <div class="website-header-title">Siimple documentation</div>
   <!-- Detail -->
-  <div class="website-header-detail">Documentation for core version <b>v2.0.0</b></div>
+  <div class="website-header-detail">Documentation for version <b>v2.0.0</b></div>
 </div>
 <!-- Main content -->
 <div class="website-main">
@@ -75,23 +75,23 @@
   <pre class="siimple-pre">&lt;div class="siimple-btn siimple-btn--blue"&gt;My button&lt;/div&gt;</pre>
 
   <!-- Colors -->
-  <% include _colors.ejs %>
+  <% include ../_layouts/docs/_colors.ejs %>
 
   <!-- Typography -->
-  <% include _typography.ejs %>
+  <% include ../_layouts/docs/_typography.ejs %>
 
   <!-- Buttons -->
-  <% include _btn.ejs %>
+  <% include ../_layouts/docs/_btn.ejs %>
 
   <!-- Alerts -->
-  <% include _alert.ejs %>
+  <% include ../_layouts/docs/_alert.ejs %>
 
   <!-- Form -->
-  <%include _form.ejs %>
+  <%include ../_layouts/docs/_form.ejs %>
 
   <!-- Grid -->
-  <% include _grid.ejs %>
+  <% include ../_layouts/docs/_grid.ejs %>
 </div>
 
 <!-- Include footer -->
-<% include ../_footer.ejs %>
+<% include ../_layouts/_footer.ejs %>
