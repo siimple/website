@@ -6,6 +6,12 @@ var rename = require('gulp-rename');
 var sass = require('gulp-sass');
 var del = require('del');
 
+//Data object
+var data = {};
+
+//Import colors configuration
+data.colors = require('../siimple-colors/data.json');
+
 //Clean the public folder
 gulp.task('clean', function()
 {
@@ -20,7 +26,7 @@ gulp.task('build:ejs', function()
   gulp.src('./_pages/**/*.ejs')
 
   //Call the ejs builder
-  .pipe(ejs({ }))
+  .pipe(ejs(data))
 
   //Rename the ejs files
   .pipe(rename({ extname: '.html' }))
@@ -47,6 +53,9 @@ gulp.task('copy:siimple', function()
 {
   //Get the siimple library
   gulp.src('../siimple-siimple/dist/siimple.css').pipe(gulp.dest('./public/css'));
+
+  //Copy the siimple-colors library
+  gulp.src('../siimple-colors/dist/siimple-colors.css').pipe(gulp.dest('./public/css'));
 });
 
 //Default task
