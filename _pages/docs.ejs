@@ -5,14 +5,14 @@
 <link rel="stylesheet" type="text/css" href="/css/core.css">
 
 <!-- Title -->
-<title>Siimple documentation</title>
+<title>siimple documentation</title>
 
 <!-- Header -->
 <div class="website-header website-header--blue">
   <!-- Menu -->
   <% include ../_layouts/_menu.ejs %>
   <!-- Title -->
-  <div class="website-header-title">Siimple documentation</div>
+  <div class="website-header-title">siimple docs</div>
   <!-- Detail -->
   <div class="website-header-detail">Documentation for version <b>v2.0.0</b></div>
 </div>
@@ -20,13 +20,13 @@
 <!-- Main content -->
 <div class="website-main">
 <p class="siimple-p">
-  <b>Siimple</b> provides a small, light, responsive and clean framework, build in ~250 lines of code.
+  <b>siimple</b> provides a small, light, responsive and clean framework, build in ~250 lines of code.
   Also, the framework comes with a ~6KB minimized version.
 </p>
 <!-- Getting started -->
 <div class="siimple-h2">Getting started</div>
 <p class="siimple-p">
-  You must include the <b>Siimple CSS</b> library in each HTML page of your project.
+  You must include the <b>siimple CSS</b> library in each HTML page of your project.
 </p>
 <!-- Hosted description -->
 <div class="siimple-h4">Hosted</div>
@@ -35,7 +35,7 @@
 </p>
 <pre class="siimple-pre">&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/siimple/VERSION/siimple.min.css"&gt;</pre>
 <p class="siimple-p">
-  Replace <code class="siimple-code">VERSION</code> with the latest version of <b>Siimple</b>. You can check all available versions
+  Replace <code class="siimple-code">VERSION</code> with the latest version of <b>siimple</b>. You can check all available versions
   <a href="https://www.jsdelivr.com/projects/siimple" class="siimple-a" target="_blank">on the jsDelivr website</a>.
 </p>
 <!-- Dowmload from github -->
@@ -48,21 +48,21 @@
 <!-- Install with npm or bower -->
 <div class="siimple-h4">Install using NPM or Bower</div>
 <p class="siimple-p">
-  <b>Siimple</b> is also hosted on <a href="https://www.npmjs.com/package/siimple" class="siimple-a" target="_blank">npm</a> and
+  <b>siimple</b> is also hosted on <a href="https://www.npmjs.com/package/siimple" class="siimple-a" target="_blank">npm</a> and
   <a href="http://bower.io" class="siimple-a" target="_blank">bower</a>, so you can use the npm's CLI to install the framework on your project
   running the following command:
 </p>
 <pre class="siimple-pre">npm install siimple --save</pre>
 <p class="siimple-p">Or using the bower's CLI running the following command: </p>
 <pre class="siimple-pre">bower install siimple</pre>
-
-<!-- Spearator -->
-<br><br>
+<p class="siimple-p">
+  You can find the CSS files on the <code class="siimple-code">./dist/</code> folder, so you can copy them to your project.
+</p>
 
 <!-- Reference -->
 <div class="siimple-h2">Reference</div>
 <p class="siimple-p">
-  On <b>v2.0.0</b>, each element of the Siimple library comes with the word <code class="siimple-code">siimple</code> and followed
+  On <b>v2.x.x</b>, each element of the siimple library comes with the word <code class="siimple-code">siimple</code> and followed
   by one dash and the element name, ie <code class="siimple-code">siimple-[ELEMENT]</code>, and each attribute
   (like colors, disabled...) comes with double dash and followed by the attribute name, ie
   <code class="siimple-code">siimple-[ELEMENT]--[ATTRIBUTE]</code>.
@@ -80,16 +80,15 @@
 <div class="siimple-h3">Colors</div>
 <!-- Colors boxes -->
 <div class="core-example">
-  <div class="core-colors siimple-bg--navy siimple-color--white">Navy #57607c</div>
-  <div class="core-colors siimple-bg--green siimple-color--white">Green #1add9f</div>
-  <div class="core-colors siimple-bg--teal siimple-color--white">Teal #18d2ba</div>
-  <div class="core-colors siimple-bg--blue siimple-color--white">Blue #4c98f2</div>
-  <div class="core-colors siimple-bg--purple siimple-color--white">Purple #b490f5</div>
-  <div class="core-colors siimple-bg--pink siimple-color--white">Pink #f45b93</div>
-  <div class="core-colors siimple-bg--red siimple-color--white">Red #ff1a4f</div>
-  <div class="core-colors siimple-bg--orange siimple-color--white">Orange #ff8463</div>
-  <div class="core-colors siimple-bg--yellow siimple-color--white">Yellow #ffc107</div>
-  <div class="core-colors siimple-bg--grey siimple-color--navy">Grey #e9effb</div>
+  <% for(var i = 0; i < colors.colors.length; i++){ %>
+  <% if(i === colors.colors.length - 1){ continue; } %>
+  <% var color_base = colors.colors[i].list[colors.index_base]; %>
+  <% var color_over = colors.colors[i].list[colors.index_over]; %>
+  <% var color_name = colors.colors[i].name; %>
+  <div class="core-colors" style="color: <%= color_over %>; background-color: <%= color_base %>;">
+    <%= color_name %>&nbsp;&nbsp;<%= color_base %>
+  </div>
+  <% } %>
 </div>
 <!-- Colors description -->
 <p class="siimple-p">
@@ -100,9 +99,9 @@
 <!-- Typography -->
 <div class="siimple-h3">Typography</div>
 <p class="siimple-p">
-  <b>Siimple</b> provides you text styles for <a class="siimple-link">links</a> using the <code class="siimple-code">siimple-link</code>
+  <b>siimple</b> provides you text styles for <a class="siimple-link">links</a> using the <code class="siimple-code">siimple-link</code>
   class and <small class="siimple-small">small text</small> using the <code class="siimple-code">siimple-small</code> class.
-  <b>Siimple</b> uses <a class="siimple-a" href="https://fonts.google.com/specimen/Montserrat" target="_blank">Montserrat</a> as
+  <b>siimple</b> uses <a class="siimple-a" href="https://fonts.google.com/specimen/Montserrat" target="_blank">Montserrat</a> as
   the default font family, imported from <b>Google Fonts</b>:
 </p>
 <pre class="siimple-pre">&lt;link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700"&gt;</pre>
@@ -291,7 +290,7 @@
 <!-- Grid -->
 <div class="siimple-h3">Grid</div>
 <p class="siimple-p">
-  <b>Siimple</b> uses a responsive grid with 12 columns. You must start the grid adding <code class="siimple-code">siimple-grid</code>.
+  <b>siimple</b> uses a responsive grid with 12 columns. You must start the grid adding <code class="siimple-code">siimple-grid</code>.
   Then, for each row of your grid you must add <code class="siimple-code">siimple-grid-row</code>, and for each column you must add
   <code class="siimple-code">siimple-grid-col</code> and <code class="siimple-code">siimple-grid-col--[NUM]</code>, where [NUM] is
    a number from 1 to 12.
