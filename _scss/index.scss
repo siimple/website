@@ -1,0 +1,26 @@
+//Import siimple
+@import "../../siimple-siimple/scss/_mixins.scss";
+
+//Index page
+.website-index
+{
+  //Projects
+  &-projects
+  {
+    //Logo
+    &-logo
+    {
+      //Display
+      display: block;
+
+      //Size
+      width: 180px; height: 150px;
+
+      //Background
+      background: { position: center center; size: 140px 140px; repeat: no-repeat; }
+
+      //Margin
+      margin: { left: auto; right: auto; top: 0px; bottom: 0px; }
+    }
+  }
+}
