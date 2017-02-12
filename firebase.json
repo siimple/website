@@ -1,0 +1,16 @@
+{
+  "hosting":
+  {
+    "public": "public",
+    "ignore": [ "firebase.json", "**/.*", "**/node_modules/**", "_layouts/**", "_pages/**", "_scss/**" ],
+    "cleanUrls": true,
+    "trailingSlash": false,
+    "redirects":
+    [
+      { "source": "/getting-started", "destination": "/", "type": 302 },
+      { "source": "/getting-started.html", "destination": "/", "type": 302 },
+      { "source": "/reference", "destination": "/", "type": 302 },
+      { "source": "/reference.html", "destination": "/", "type": 302 }
+    ]
+  }
+}
