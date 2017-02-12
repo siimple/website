@@ -1,5 +1,5 @@
 //Import siimple
-@import "../../siimple-siimple/src/_mixins.scss";
+@import "../../siimple-siimple/scss/_mixins.scss";
 
 //Body style
 body
@@ -89,7 +89,7 @@ body
     &--blue { background-color: $siimple-blue; color: $siimple-white; }
 
     //Pink background
-    &--pink { background-color: $siimple-pink; color: $siimple-white; } 
+    &--pink { background-color: $siimple-pink; color: $siimple-white; }
   }
 
   //Main content
