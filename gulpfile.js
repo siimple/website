@@ -7,7 +7,13 @@ var sass = require('gulp-sass');
 var del = require('del');
 
 //Data object
-var data = {};
+var data = { pkg: {} };
+
+//Import the siimple package
+data.pkg.siimple = require('../siimple-siimple/package.json');
+
+//Import the siimple-colors package
+data.pkg.colors = require('../siimple-colors/package.json');
 
 //Import colors configuration
 data.colors = require('../siimple-colors/data.json');
@@ -48,6 +54,13 @@ gulp.task('build:sass', function()
   .pipe(gulp.dest('./public/css/'));
 });
 
+//Copy the assets
+gulp.task('copy:assets', function()
+{
+  //Copy the assets folder
+  gulp.src('./_assets/**/*').dest('./public');
+});
+
 //Copy the siimple code
 gulp.task('copy:siimple', function()
 {
@@ -59,4 +72,4 @@ gulp.task('copy:siimple', function()
 });
 
 //Default task
-gulp.task('default', [ 'clean', 'build:ejs', 'build:sass', 'copy:siimple' ]);
+gulp.task('default', [ 'clean', 'build:ejs', 'build:sass', 'copy:siimple', 'copy:assets' ]);
