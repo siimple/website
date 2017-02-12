@@ -58,7 +58,7 @@ gulp.task('build:sass', function()
 gulp.task('copy:assets', function()
 {
   //Copy the assets folder
-  gulp.src('./_assets/**/*').dest('./public');
+  gulp.src('./_assets/**/*').pipe(gulp.dest('./public'));
 });
 
 //Copy the siimple code
