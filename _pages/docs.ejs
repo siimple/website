@@ -2,7 +2,7 @@
 <% include ../_layouts/_header.ejs %>
 
 <!-- Core style -->
-<link rel="stylesheet" type="text/css" href="/css/core.css">
+<link rel="stylesheet" type="text/css" href="/css/docs.css">
 
 <!-- Title -->
 <title>siimple documentation</title>
@@ -12,13 +12,15 @@
   <!-- Menu -->
   <% include ../_layouts/_menu.ejs %>
   <!-- Title -->
-  <div class="website-header-title">siimple docs</div>
+  <div class="website-header-title">siimple</div>
   <!-- Detail -->
-  <div class="website-header-detail">Documentation for version <b>v2.0.0</b></div>
+  <div class="website-header-detail">Documentation for version <b>v<%= pkg.siimple.version %></b></div>
 </div>
 
 <!-- Main content -->
 <div class="website-main">
+<!-- Description -->
+<div class="siimple-h2">Overview</div>
 <p class="siimple-p">
   <b>siimple</b> provides a small, light, responsive and clean framework, build in ~250 lines of code.
   Also, the framework comes with a ~6KB minimized version.
