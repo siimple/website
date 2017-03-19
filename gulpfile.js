@@ -10,10 +10,13 @@ var del = require('del');
 var data = { pkg: {} };
 
 //Import the siimple package
-data.pkg.siimple = require('../siimple-siimple/package.json');
+data.pkg.siimple = require('../siimple/package.json');
 
 //Import the siimple-colors package
 data.pkg.colors = require('../siimple-colors/package.json');
+
+//Import the siimple-layout package
+data.pkg.layout = require('../siimple-layout/package.json');
 
 //Import colors configuration
 data.colors = require('../siimple-colors/data.json');
@@ -48,7 +51,7 @@ gulp.task('build:sass', function()
   gulp.src('./_scss/**/*.scss')
 
   //Build the css files
-  .pipe(sass().on('error', sass.logError))
+  .pipe(sass({ includePaths: [ '../' ] }).on('error', sass.logError))
 
   //Save to the output dir
   .pipe(gulp.dest('./public/css/'));
@@ -65,10 +68,13 @@ gulp.task('copy:assets', function()
 gulp.task('copy:siimple', function()
 {
   //Get the siimple library
-  gulp.src('../siimple-siimple/dist/siimple.css').pipe(gulp.dest('./public/css'));
+  gulp.src('../siimple/dist/siimple.css').pipe(gulp.dest('./public/css'));
 
   //Copy the siimple-colors library
   gulp.src('../siimple-colors/dist/siimple-colors.css').pipe(gulp.dest('./public/css'));
+
+  //Copy the siimple-layout library
+  gulp.src('../siimple-layout/dist/siimple-layout.css').pipe(gulp.dest('./public/css'));
 });
 
 //Default task
