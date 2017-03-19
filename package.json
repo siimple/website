@@ -13,11 +13,11 @@
   },
   "dependencies":
   {
-    "del": "^2.2.2",
-    "gulp": "^3.9.1",
-    "gulp-ejs": "^2.3.0",
+    "del": "2.2.2",
+    "gulp": "3.9.1",
+    "gulp-ejs": "3.0.0",
     "gulp-rename": "1.2.2",
-    "gulp-sass": "^3.0.0",
+    "gulp-sass": "3.1.0",
     "stattic": "0.1.7"
   },
   "scritps": { "start": "node ./server.js" }
