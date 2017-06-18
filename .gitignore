@@ -38,3 +38,6 @@ jspm_packages
 
 # Generated website
 dist/
+
+# IntelliJ project files
+*.iml
