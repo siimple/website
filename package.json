@@ -11,14 +11,12 @@
     "type": "git",
     "url": "git://github.com/siimple/website.git"
   },
-  "dependencies":
+  "devDependencies":
   {
-    "del": "2.2.2",
+    "rmr": "0.0.4",
     "gulp": "3.9.1",
-    "gulp-ejs": "3.0.0",
     "gulp-rename": "1.2.2",
-    "gulp-sass": "3.1.0",
-    "stattic": "0.1.7"
+    "gulp-nunjucks": "3.0.0"
   },
   "scritps": { "start": "node ./server.js" }
 }
