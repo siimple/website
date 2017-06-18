@@ -1,0 +1,10 @@
+{
+  "name": "siimple-website",
+  "description": "The siimple website",
+  "dependencies":
+  {
+    "siimple": "2.0.1",
+    "siimple-colors": "0.1.0",
+    "siimple-layout": "master"
+  }
+}
