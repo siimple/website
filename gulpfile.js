@@ -1,81 +1,46 @@
 //Import dependencies
 var fs = require('fs');
 var gulp = require('gulp');
-var ejs = require("gulp-ejs");
-var rename = require('gulp-rename');
-var sass = require('gulp-sass');
-var del = require('del');
+var nunjucks = require('gulp-nunjucks-render');
+var rmr = require('rmr');
 
-//Data object
-var data = { pkg: {} };
-
-//Import the siimple package
-data.pkg.siimple = require('../siimple/package.json');
-
-//Import the siimple-colors package
-data.pkg.colors = require('../siimple-colors/package.json');
-
-//Import the siimple-layout package
-data.pkg.layout = require('../siimple-layout/package.json');
-
-//Import colors configuration
-data.colors = require('../siimple-colors/data.json');
-
-//Clean the public folder
+//Clean the dist folder
 gulp.task('clean', function()
 {
   //Clean the public folder
-  del.sync([ './public/**/*' ]);
+  return rmr.sync('./dist');
 });
 
-//Build the ejs files
-gulp.task('build:ejs', function()
+//Build the website
+gulp.task('build', function()
 {
   //Get the source files
-  gulp.src('./_pages/**/*.ejs')
+  gulp.src('./app/*.html')
 
-  //Call the ejs builder
-  .pipe(ejs(data))
-
-  //Rename the ejs files
-  .pipe(rename({ extname: '.html' }))
+  //Build the page
+  .pipe(nunjucks({ path: './templates', data: {} }))
 
   //Output path
-  .pipe(gulp.dest('./public/'));
+  .pipe(gulp.dest('./dist/'));
 });
 
-//Build the sass/scss files
-gulp.task('build:sass', function()
+//Copy the assets and other files
+gulp.task('copy', function()
 {
-  //Get all the scss files
-  gulp.src('./_scss/**/*.scss')
+  //Copy the yaml files
+  gulp.src('./*.yaml').pipe(gulp.dest('./dist/'));
 
-  //Build the css files
-  .pipe(sass({ includePaths: [ '../' ] }).on('error', sass.logError))
+  //Copy the javascript files
+  gulp.src('./app/js/*.js').pipe(gulp.dest('./dist/js'));
 
-  //Save to the output dir
-  .pipe(gulp.dest('./public/css/'));
-});
+  //Copy the css files
+  gulp.src('./app/css/*.css').pipe(gulp.dest('./dist/css'));
 
-//Copy the assets
-gulp.task('copy:assets', function()
-{
-  //Copy the assets folder
-  gulp.src('./_assets/**/*').pipe(gulp.dest('./public'));
-});
-
-//Copy the siimple code
-gulp.task('copy:siimple', function()
-{
-  //Get the siimple library
-  gulp.src('../siimple/dist/siimple.css').pipe(gulp.dest('./public/css'));
-
-  //Copy the siimple-colors library
-  gulp.src('../siimple-colors/dist/siimple-colors.css').pipe(gulp.dest('./public/css'));
-
-  //Copy the siimple-layout library
-  gulp.src('../siimple-layout/dist/siimple-layout.css').pipe(gulp.dest('./public/css'));
+  //Copy the siimple modules
+  gulp.src('./bower_components/siimple/dist/siimple.css').pipe(gulp.dest('./dist/css'));
+  gulp.src('./bower_components/siimple-colors/dist/siimple-colors.css').pipe(gulp.dest('./dist/css'));
+  gulp.src('./bower_components/siimple-layout/dist/siimple-layout.css').pipe(gulp.dest('./dist/css'));
 });
 
 //Default task
-gulp.task('default', [ 'clean', 'build:ejs', 'build:sass', 'copy:siimple', 'copy:assets' ]);
+gulp.task('default', [ 'clean', 'build', 'copy' ]);
