@@ -1,0 +1,76 @@
+{% set url_repo = "https://github.com/siimple" %}
+{% set url_contribute = "https://github.com/siimple/siimple/blob/master/CONTRIBUTING.md" %}
+
+<!-- Meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Descripcion -->
+<meta name="description" content="Minimal CSS framework for flat and clean designs.">
+<meta name="author" content="Josemi Juanes">
+<meta name="keywords" content="siimple, css, ui, flat, clean, websites, minimal, scss, sass, jmjuanes">
+
+<!-- Styles -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
+<link rel="stylesheet" type="text/css" href="/css/siimple.css">
+<link rel="stylesheet" type="text/css" href="/css/siimple-colors.css">
+<link rel="stylesheet" type="text/css" href="/css/siimple-layout.css">
+<link rel="stylesheet" type="text/css" href="/css/style.css">
+
+<!-- Scripts -->
+<script type="text/javascript" src="/js/ga.js"></script>
+
+<!-- Custom styles -->
+{% block header %}{% endblock %}
+
+<!-- Main layout -->
+<div class="siimple-layout siimple-layout--{{ page_color }}">
+  <!-- Header -->
+  <div class="siimple-layout-header">
+    <!-- Logo -->
+    <a href="/" class="siimple-layout-title">siimple</a>
+    <!-- Menu -->
+    <div class="siimple-layout-menu">
+      <a href="/core" class="siimple-layout-menu-item">Core</a>
+      <a href="/layout" class="siimple-layout-menu-item">Layout</a>
+      <a href="/colors" class="siimple-layout-menu-item">Colors</a>
+      <a href="{{ url_repo }}" class="siimple-layout-menu-item" target="_blank">Repo</a>
+    </div>
+  </div>
+  <!-- Content -->
+  <div class="siimple-layout-content">
+    <!-- Jumbotron -->
+    {% block jumbotron %}{% endblock %}
+    <!-- Main content -->
+    <div class="siimple-layout-main">
+      <!-- Main content -->
+      {% block main %}{% endblock %}
+      <!-- Contribute -->
+      <div class="website-contribute" align="center">
+        <!-- Contribute tite -->
+        <div class="siimple-h3">Want to contribute?</div>
+        <!-- Contribute explain -->
+        <div class="siimple-p">
+          If you found a bug, have any questions or want to contribute, please feel free to open an issue or send a pull
+          request to our repository on <a href="{{ url_repo }}" class="siimple-a" target="_blank">GitHub</a>.
+          We appreciate each review or pull request for improving the <b>siimple</b> framework.
+        </div>
+        <!-- Contribute buttons -->
+        <div align="center">
+          <a href="{{ url_repo }}" class="siimple-btn siimple-btn--grey" target="_blank">Organization on GitHub</a>
+          <a href="{{ url_contribute }}" class="siimple-btn siimple-btn--grey" target="_blank">Contribution guidelines</a>
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+    <div class="siimple-layout-footer siimple-layout-footer--grey" align="center">
+      <!-- Detail -->
+      <div class="siimple-p">Made with <span class="website-heart"></span> using <b>siimple</b></div>
+      <!-- Cookies notice -->
+      <div class="siimple-small">
+        This website uses cookies to ensure you get the best experience on our website.
+        By continuing to browse the site, you are agreeing to our use of cookies.
+      </div>
+    </div>
+  </div>
+</div>
