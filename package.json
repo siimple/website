@@ -16,7 +16,7 @@
     "rmr": "0.0.4",
     "gulp": "3.9.1",
     "gulp-rename": "1.2.2",
-    "gulp-nunjucks": "3.0.0"
+    "gulp-nunjucks-render": "2.2.1"
   },
   "scritps": { "start": "node ./server.js" }
 }
