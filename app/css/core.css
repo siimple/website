@@ -12,3 +12,11 @@
   margin-bottom: 10px;
   margin-left: 10px;
 }
+
+/* Examples boxes */
+.core-examples
+{
+  display: block;
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
