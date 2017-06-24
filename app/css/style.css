@@ -1,3 +1,4 @@
+/* Body style */
 body
 {
   font-family: 'Montserrat', sans-serif;
@@ -8,14 +9,27 @@ body
   padding: 0px !important;
 }
 
-.heart:after
+/* Jumbotron styles */
+.jumbotron-logo
 {
-  content: "\2764";
-  color: #f45660;
+  width: 200px;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: 200px 200px;
+  background-position: center center;
+  margin-bottom: 20px;
 }
 
+/* Contribute box styles */
 .contribute
 {
   padding-top: 50px;
   padding-bottom: 50px;
+}
+
+/* Footer styles */
+.footer-heart:after
+{
+  content: "\2764";
+  color: #f45660;
 }
