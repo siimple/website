@@ -24,53 +24,52 @@
 {% block header %}{% endblock %}
 
 <!-- Main layout -->
-<div class="siimple-layout siimple-layout--{{ page_color }}">
-  <!-- Header -->
-  <div class="siimple-layout-header">
-    <!-- Logo -->
-    <a href="/" class="siimple-layout-title">siimple</a>
-    <!-- Menu -->
-    <div class="siimple-layout-menu">
-      <a href="/core" class="siimple-layout-menu-item">Core</a>
-      <a href="/layout" class="siimple-layout-menu-item">Layout</a>
-      <a href="/colors" class="siimple-layout-menu-item">Colors</a>
-      <a href="{{ url_repo }}" class="siimple-layout-menu-item" target="_blank">Repo</a>
+<div class="siimple-layout">
+  <!-- Navigation bar -->
+  <div class="siimple-layout-navbar siimple-layout-navbar--{{ page_color }} siimple-layout--large">
+    <!-- Logo container -->
+    <div class="siimple-layout--left">
+      <a href="/" class="siimple-layout-navbar-title">siimple</a>
+    </div>
+    <!-- Menu container -->
+    <div class="siimple-layout--right">
+      <a href="/core" class="siimple-layout-navbar-link">Core</a>
+      <a href="/layout" class="siimple-layout-navbar-link">Layout</a>
+      <a href="/colors" class="siimple-layout-navbar-link">Colors</a>
+      <a href="{{ url_repo }}" class="siimple-layout-navbar-link" target="_blank">Repo</a>
     </div>
   </div>
+  <!-- Jumbotron -->
+  {% block jumbotron %}{% endblock %}
   <!-- Content -->
-  <div class="siimple-layout-content">
-    <!-- Jumbotron -->
-    {% block jumbotron %}{% endblock %}
+  <div class="siimple-layout-content siimple-layout--large">
     <!-- Main content -->
-    <div class="siimple-layout-main">
-      <!-- Main content -->
-      {% block main %}{% endblock %}
-      <!-- Contribute -->
-      <div class="contribute" align="center">
-        <!-- Contribute tite -->
-        <div class="siimple-h3">Want to contribute?</div>
-        <!-- Contribute explain -->
-        <div class="siimple-p">
-          If you found a bug, have any questions or want to contribute, please feel free to open an issue or send a pull
-          request to our repository on <a href="{{ url_repo }}" class="siimple-a" target="_blank">GitHub</a>.
-          We appreciate each review or pull request for improving the <b>siimple</b> framework.
-        </div>
-        <!-- Contribute buttons -->
-        <div align="center">
-          <a href="{{ url_repo }}" class="siimple-btn siimple-btn--grey" target="_blank">Organization on GitHub</a>
-          <a href="{{ url_contribute }}" class="siimple-btn siimple-btn--grey" target="_blank">Contribution guidelines</a>
-        </div>
+    {% block main %}{% endblock %}
+    <!-- Contribute -->
+    <div class="contribute" align="center">
+      <!-- Contribute tite -->
+      <div class="siimple-h3">Want to contribute?</div>
+      <!-- Contribute explain -->
+      <div class="siimple-p">
+        If you found a bug, have any questions or want to contribute, please feel free to open an issue or send a pull
+        request to our repository on <a href="{{ url_repo }}" class="siimple-a" target="_blank">GitHub</a>.
+        We appreciate each review or pull request for improving the <b>siimple</b> framework.
+      </div>
+      <!-- Contribute buttons -->
+      <div align="center">
+        <a href="{{ url_repo }}" class="siimple-btn siimple-btn--grey" target="_blank">Organization on GitHub</a>
+        <a href="{{ url_contribute }}" class="siimple-btn siimple-btn--grey" target="_blank">Contribution guidelines</a>
       </div>
     </div>
-    <!-- Footer -->
-    <div class="siimple-layout-footer siimple-layout-footer--grey" align="center">
-      <!-- Detail -->
-      <div class="siimple-p">Made with <span class="footer-heart"></span> using <b>siimple</b></div>
-      <!-- Cookies notice -->
-      <div class="siimple-small">
-        This website uses cookies to ensure you get the best experience on our website.
-        By continuing to browse the site, you are agreeing to our use of cookies.
-      </div>
+  </div>
+  <!-- Footer -->
+  <div class="siimple-layout-footer siimple-layout-footer--grey siimple-layout--large" align="center">
+    <!-- Detail -->
+    <div class="siimple-p">Made with <span class="footer-heart"></span> using <b>siimple</b></div>
+    <!-- Cookies notice -->
+    <div class="siimple-small">
+      This website uses cookies to ensure you get the best experience on our website.
+      By continuing to browse the site, you are agreeing to our use of cookies.
     </div>
   </div>
 </div>
