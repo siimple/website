@@ -35,5 +35,5 @@ body
 .footer-heart:after
 {
   content: "\2764";
-  color: #f45660;
+  color: var(--siimple-red);
 }
