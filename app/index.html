@@ -1,1 +1,42 @@
+{% set page_color = "blue" %}
+
 {% extends "base.html" %}
+
+{% block header %}
+<title>siimple</title>
+<link rel="stylesheet" type="text/css" href="/css/home.css">
+{% endblock %}
+
+{% block jumbotron %}
+<div class="siimple-layout-jumbotron siimple-layout-jumbotron--blue jumbotron-gradient">
+  <div class="siimple-layout--large" align="center">
+    <div class="siimple-layout-jumbotron-title">siimple</div>
+    <div class="siimple-layout-jumbotron-detail">The siimple foundation</div>
+  </div>
+</div>
+{% endblock %}
+
+{% block main %}
+<div align="center">
+  <a href="/core" class="module">
+    <div class="module-header module-core"></div>
+    <div class="module-content" align="left">
+      <div class="module-title">siimple-core</div>
+      <div class="module-detail">
+        This is the module content
+      </div>
+      <div class="siimple-btn siimple-btn--blue module-btn">Documentation</div>
+    </div>
+  </a>
+  <a href="/colors" class="module">
+    <div class="module-header module-colors"></div>
+    <div class="module-content" align="left">
+      <div class="module-title">siimple-colors</div>
+      <div class="module-detail">
+        This is the module content
+      </div>
+      <div class="siimple-btn siimple-btn--pink module-btn">Documentation</div>
+    </div>
+  </a>
+</div>
+{% endblock %}
