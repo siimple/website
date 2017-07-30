@@ -10,10 +10,6 @@ body
 }
 
 /* Jumbotron styles */
-.jumbotron-gradient
-{
-  background: linear-gradient(var(--siimple-blue-3), var(--siimple-teal));
-}
 .jumbotron-logo
 {
   width: 200px;
