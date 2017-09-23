@@ -40,6 +40,11 @@ gulp.task('copy', function()
   gulp.src('./bower_components/siimple/dist/siimple.css').pipe(gulp.dest('./dist/css'));
   gulp.src('./bower_components/siimple-colors/dist/siimple-colors.css').pipe(gulp.dest('./dist/css'));
   gulp.src('./bower_components/siimple-layout/dist/siimple-layout.css').pipe(gulp.dest('./dist/css'));
+
+  //Copy the experiments files
+  gulp.src('./bower_components/siimple-experiments/docs/dist/docs.css').pipe(gulp.dest('./dist/css'));
+  gulp.src('./bower_components/siimple-experiments/docs/dist/docs.js').pipe(gulp.dest('./dist/js'));
+
 });
 
 //Default task
