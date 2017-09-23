@@ -18,8 +18,8 @@
     "gulp-rename": "1.2.2",
     "gulp-nunjucks-render": "2.2.1"
   },
-  "scritps":
+  "scripts":
   {
-    "serve": "dev_appserver.py  ./dist"
+    "serve": "dev_appserver.py ./dist"
   }
 }
