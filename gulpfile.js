@@ -1,6 +1,7 @@
 //Import dependencies
 var fs = require('fs');
 var gulp = require('gulp');
+var rename = require('gulp-rename');
 var nunjucks = require('gulp-nunjucks-render');
 var rmr = require('rmr');
 
@@ -15,7 +16,7 @@ gulp.task('clean', function()
 gulp.task('build', function()
 {
   //Get the source files
-  gulp.src('./app/*.html')
+  gulp.src('./app/**/*.html')
 
   //Build the page
   .pipe(nunjucks({ path: './templates', data: {} }))
@@ -42,9 +43,8 @@ gulp.task('copy', function()
   gulp.src('./bower_components/siimple-layout/dist/siimple-layout.css').pipe(gulp.dest('./dist/css'));
 
   //Copy the experiments files
-  gulp.src('./bower_components/siimple-experiments/docs/dist/docs.css').pipe(gulp.dest('./dist/css'));
-  gulp.src('./bower_components/siimple-experiments/docs/dist/docs.js').pipe(gulp.dest('./dist/js'));
-
+  gulp.src('./bower_components/siimple-experiments/docs/dist/docs.css').pipe(rename('siimple-docs.css')).pipe(gulp.dest('./dist/css'));
+  gulp.src('./bower_components/siimple-experiments/docs/dist/docs.js').pipe(rename('siimple-docs.js')).pipe(gulp.dest('./dist/js'));
 });
 
 //Default task
