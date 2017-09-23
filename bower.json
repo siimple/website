@@ -5,6 +5,7 @@
   {
     "siimple": "master",
     "siimple-colors": "master",
-    "siimple-layout": "master"
+    "siimple-layout": "master",
+    "siimple-experiments": "master"
   }
 }
