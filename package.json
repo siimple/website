@@ -20,6 +20,6 @@
   },
   "scritps":
   {
-
+    "serve": "dev_appserver.py  ./dist"
   }
 }
