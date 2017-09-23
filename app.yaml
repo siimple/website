@@ -13,9 +13,21 @@ handlers:
   secure: always
 
 - url: /
+  mime_type: text/html
   static_files: index.html
   upload: index.html
 
+- url: /(.+)/
+  mime_type: text/html
+  static_files: \1/index.html
+  upload: (.+)/index.html
+
+- url: /(.+)/(.+)
+  mime_type: text/html
+  static_files: \1/\2.html
+  upload: (.*)/(.*)
+
 - url: /(.+)
+  mime_type: text/html
   static_files: \1.html
   upload: (.+)
