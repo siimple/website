@@ -3,7 +3,32 @@
 {% block content %}
 <div class="docs docs--js">
   <div class="docs-sidebar">
-    {% block doc_sidebar %}{% endblock %}
+    <div class="docs-menu">
+      <a href="./" class="docs-menu-group">GETTING STARTED</a>
+      <a href="./#installation" class="docs-menu-item">Installation</a>
+      <a href="./#browser-support" class="docs-menu-item">Browser support</a>
+
+      <a href="./typography" class="docs-menu-group">TYPOGRAPHY</a>
+      <a href="./typography#paragraph" class="docs-menu-item">Paragraph</a>
+      <a href="./typography#headings" class="docs-menu-item">Headings</a>
+
+      <a href="./elements" class="docs-menu-group">ELEMENTS</a>
+      <a href="./elements#button" class="docs-menu-item">Button</a>
+      <a href="./elements#close" class="docs-menu-item">Close</a>
+      <a href="./elements#alert" class="docs-menu-item">Alert</a>
+      <a href="./elements#spinner" class="docs-menu-item">Spinner</a>
+
+      <a href="./form" class="docs-menu-group">FORM</a>
+      <a href="./form#checkbox" class="docs-menu-item">Checkbox</a>
+      <a href="./form#input" class="docs-menu-item">Input</a>
+      <a href="./form#label" class="docs-menu-item">Label</a>
+      <a href="./form#select" class="docs-menu-item">Select</a>
+      <a href="./form#switch" class="docs-menu-item">Switch</a>
+      <a href="./form#textare" class="docs-menu-item">Textarea</a>
+
+      <a href="./grid" class="docs-menu-group">GRID</a>
+      <a href="./grid#sizes" class="docs-menu-item">Sizes</a>
+    </div>
   </div>
   <div class="docs-navbar">
     <div class="docs-navbar-menu"><span></span></div>
@@ -11,8 +36,8 @@
   <div class="docs-content">
     {% block doc_content %}{% endblock %}
   </div>
-  <div class="docs-sections">
-    {% block doc_sections %}{% endblock %}
+  <div class="docs-navigation">
+    {% block doc_navigation %}{% endblock %}
   </div>
 </div>
 {% endblock %}
