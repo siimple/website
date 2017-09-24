@@ -1,0 +1,59 @@
+{% extends "doc-core.html" %}
+
+{% block doc_content %}
+<!-- Getting started block -->
+<div class="docs-title1">Getting started</div>
+<p class="siimple-p">
+  <b>siimple</b> is a light, responsive and open source framework for design flat and clean websites.
+  It has built in SASS/SCSS and provides a clean starting point for your web design.
+</p>
+
+<!-- Installation block -->
+<a name="installation"></a>
+<div class="docs-title1">Installation</div>
+<p class="siimple-p">
+  You must include the <b>siimple CSS</b> library in each HTML page of your project.
+</p>
+
+<!-- Hosted description -->
+<div class="siimple-h4">Hosted</div>
+<p class="siimple-p">
+  Just add the following <code class="siimple-code">&lt;link&gt;</code> element in your HTML file:
+</p>
+<pre class="siimple-pre">&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/siimple/VERSION/siimple.min.css"&gt;</pre>
+<p class="siimple-p">
+  Replace <code class="siimple-code">VERSION</code> with the latest version of <b>siimple</b>. You can check all available versions
+  <a href="https://www.jsdelivr.com/projects/siimple" class="siimple-a" target="_blank">on the jsDelivr website</a>.
+</p>
+
+<!-- Dowmload from github -->
+<div class="siimple-h4">Download from GitHub</div>
+<p class="siimple-p">
+  You can visit the repository hosted on <a href="https://github.com/siimple/siimple" class="siimple-link" target="_blank">GitHub</a> and download the
+  latest version from the <a href="https://github.com/siimple/siimple/releases" class="siimple-link" target="_blank">releases page</a>.
+  You can find the CSS files on the <code class="siimple-code">./dist/</code> folder, so you can copy them to your project.
+</p>
+
+<!-- Install with npm or bower -->
+<div class="siimple-h4">Install using NPM or Bower</div>
+<p class="siimple-p">
+  <b>siimple</b> is also hosted on <a href="https://www.npmjs.com/package/siimple" class="siimple-a" target="_blank">npm</a> and
+  <a href="http://bower.io" class="siimple-a" target="_blank">bower</a>, so you can use the npm's CLI to install the framework on your project
+  running the following command:
+</p>
+<pre class="siimple-pre">npm install siimple --save</pre>
+<p class="siimple-p">Or using the bower's CLI running the following command: </p>
+<pre class="siimple-pre">bower install siimple</pre>
+<p class="siimple-p">
+  You can find the CSS files on the <code class="siimple-code">./dist/</code> folder, so you can copy them to your project.
+</p>
+
+<!-- Browser support -->
+<a name="browser-support"></a>
+<div class="docs-title1">Browser support</div>
+
+{% endblock %}
+
+{% block doc_sections %}
+<a href="./typography" class="docs-sections-next">Typography</a>
+{% endblock %}
