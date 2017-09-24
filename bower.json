@@ -3,10 +3,10 @@
   "description": "The siimple website",
   "dependencies":
   {
-    "siimple": "master",
-    "siimple-colors": "master",
-    "siimple-layout": "master",
-    "siimple-experiments": "master",
+    "siimple": "siimple/siimple#master",
+    "siimple-colors": "siimple/siimple-colors#master",
+    "siimple-layout": "siimple/siimple-layout#master",
+    "siimple-experiments": "siimple/siimple-experiments#master",
     "artwork": "siimple/artwork#master"
   }
 }
