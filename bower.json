@@ -6,6 +6,7 @@
     "siimple": "master",
     "siimple-colors": "master",
     "siimple-layout": "master",
-    "siimple-experiments": "master"
+    "siimple-experiments": "master",
+    "artwork": "siimple/artwork#master"
   }
 }
