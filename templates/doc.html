@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="docs docs--js">
+  <div class="docs-sidebar">
+    {% block doc_sidebar %}{% endblock %}
+  </div>
+  <div class="docs-navbar">
+    <div class="docs-navbar-menu"><span></span></div>
+  </div>
+  <div class="docs-content">
+    {% block doc_content %}{% endblock %}
+  </div>
+  <div class="docs-sections">
+    {% block doc_sections %}{% endblock %}
+  </div>
+</div>
+{% endblock %}
