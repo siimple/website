@@ -16,10 +16,11 @@
     "rmr": "0.0.4",
     "gulp": "3.9.1",
     "gulp-rename": "1.2.2",
-    "gulp-nunjucks-render": "2.2.1"
+    "gulp-nunjucks-render": "2.2.1",
+    "gulp-sass": "^3.1.0"
   },
   "scripts":
   {
-    "serve": "dev_appserver.py ./dist"
+    "serve": "cd ./dist && dev_appserver.py app.yaml"
   }
 }
