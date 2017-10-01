@@ -1,8 +1,18 @@
-{% extends "doc-core.html" %}
+{% extends "documentation.html" %}
 
-{% block doc_content %}
+{% block documentation_menu %}
+<a href="./" class="siimple-docs-menu-group">GETTING STARTED</a>
+<a href="./#installation" class="siimple-docs-menu-item">Installation</a>
+<a href="./#browser-support" class="siimple-docs-menu-item">Browser support</a>
+<a href="./typography" class="siimple-docs-menu-group">TYPOGRAPHY</a>
+<a href="./elements" class="siimple-docs-menu-group">ELEMENTS</a>
+<a href="./form" class="siimple-docs-menu-group">FORM</a>
+<a href="./grid" class="siimple-docs-menu-group">GRID</a>
+{% endblock %}
+
+{% block documentation_content %}
 <!-- Getting started block -->
-<div class="docs-title1">Getting started</div>
+<div class="siimple-docs-title1">Getting started</div>
 <p class="siimple-p">
   <b>siimple</b> is a light, responsive and open source framework for design flat and clean websites.
   It has built in SASS/SCSS and provides a clean starting point for your web design.
@@ -10,7 +20,7 @@
 
 <!-- Installation block -->
 <a name="installation"></a>
-<div class="docs-title1">Installation</div>
+<div class="siimple-docs-title1">Installation</div>
 <p class="siimple-p">
   You must include the <b>siimple CSS</b> library in each HTML page of your project.
 </p>
@@ -50,10 +60,10 @@
 
 <!-- Browser support -->
 <a name="browser-support"></a>
-<div class="docs-title1">Browser support</div>
+<div class="siimple-docs-title1">Browser support</div>
 
 {% endblock %}
 
-{% block doc_sections %}
-<a href="./typography" class="docs-sections-next">Typography</a>
+{% block documentation_navigation %}
+<a href="./typography" class="siimple-docs-navigation-next">Typography</a>
 {% endblock %}
