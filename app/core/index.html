@@ -12,7 +12,7 @@
 
 {% block documentation_content %}
 <!-- Getting started block -->
-<div class="siimple-docs-title1">Getting started</div>
+<div class="siimple-h2">Getting started</div>
 <p class="siimple-p">
   <b>siimple</b> is a light, responsive and open source framework for design flat and clean websites.
   It has built in SASS/SCSS and provides a clean starting point for your web design.
@@ -20,47 +20,57 @@
 
 <!-- Installation block -->
 <a name="installation"></a>
-<div class="siimple-docs-title1">Installation</div>
+<div class="siimple-h3">Installation</div>
 <p class="siimple-p">
-  You must include the <b>siimple CSS</b> library in each HTML page of your project.
+  There are 3 ways to get started with <b>siimple</b> in your project.
+</p>
+
+<!-- Install with npm or bower -->
+<div class="siimple-h5">1. Install using a package manager</div>
+<p class="siimple-p">
+  This is the recommended method. You can use <a href="https://www.npmjs.com/package/siimple" class="siimple-a" target="_blank">npm</a> or
+  <a href="http://bower.io" class="siimple-a" target="_blank">bower</a> to download the latest version of <b>siimple</b>.
+</p>
+<p class="siimple-paragraph">Install using <b>npm</b>:</p>
+<pre class="siimple-pre">npm install siimple --save</pre>
+<p class="siimple-p">Install using <b>bower</b>: </p>
+<pre class="siimple-pre">bower install siimple</pre>
+<p class="siimple-p">
+  You can find the release CSS files in the <code class="siimple-code">./dist/</code> folder.
 </p>
 
 <!-- Hosted description -->
-<div class="siimple-h4">Hosted</div>
+<div class="siimple-h5">2. Use a hosted version</div>
 <p class="siimple-p">
-  Just add the following <code class="siimple-code">&lt;link&gt;</code> element in your HTML file:
+  You can use our hosted version in <b>JsDelivr</b>. Just copy and paste the following <code class="siimple-code">&lt;link&gt;</code> element in your HTML file:
 </p>
-<pre class="siimple-pre">&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/siimple@VERSION/dist/siimple.min.css"&gt;</pre>
+<pre class="siimple-pre">&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/siimple@2.1.0/dist/siimple.min.css"&gt;</pre>
 <p class="siimple-p">
-  Replace <code class="siimple-code">VERSION</code> with the latest version of <b>siimple</b>. You can check all available versions
-  <a href="https://www.jsdelivr.com/package/npm/siimple" class="siimple-a" target="_blank">on the jsDelivr website</a>.
+  You can check all available hosted versions <a href="https://www.jsdelivr.com/package/npm/siimple" class="siimple-a" target="_blank">in the jsDelivr website</a>.
 </p>
 
 <!-- Dowmload from github -->
-<div class="siimple-h4">Download from GitHub</div>
+<div class="siimple-h5">3. Download manually from the repository</div>
 <p class="siimple-p">
   You can visit the repository hosted on <a href="https://github.com/siimple/siimple" class="siimple-link" target="_blank">GitHub</a> and download the
   latest version from the <a href="https://github.com/siimple/siimple/releases" class="siimple-link" target="_blank">releases page</a>.
   You can find the CSS files on the <code class="siimple-code">./dist/</code> folder, so you can copy them to your project.
 </p>
 
-<!-- Install with npm or bower -->
-<div class="siimple-h4">Install using NPM or Bower</div>
-<p class="siimple-p">
-  <b>siimple</b> is also hosted on <a href="https://www.npmjs.com/package/siimple" class="siimple-a" target="_blank">npm</a> and
-  <a href="http://bower.io" class="siimple-a" target="_blank">bower</a>, so you can use the npm's CLI to install the framework on your project
-  running the following command:
-</p>
-<pre class="siimple-pre">npm install siimple --save</pre>
-<p class="siimple-p">Or using the bower's CLI running the following command: </p>
-<pre class="siimple-pre">bower install siimple</pre>
-<p class="siimple-p">
-  You can find the CSS files on the <code class="siimple-code">./dist/</code> folder, so you can copy them to your project.
-</p>
-
 <!-- Browser support -->
 <a name="browser-support"></a>
-<div class="siimple-docs-title1">Browser support</div>
+<div class="siimple-h3">Browser support</div>
+<p class="siimple-paragraph">
+  <b>siimple</b> is supported by the latest versions of most mobile and desktop browsers.
+</p>
+<ul>
+  <li>Chrome: <span class="siimple-color--green">supported</span></li>
+  <li>Opera: <span class="siimple-color--green">supported</span></li>
+  <li>Firefox: <span class="siimple-color--green">supported</span></li>
+  <li>Safari: <span class="siimple-color--green">supported</span></li>
+  <li>Edge: <span class="siimple-color--green">supported</span></li>
+  <li>Internet Explorer: <span class="siimple-color--yellow">10+</span></li>
+</ul>
 
 {% endblock %}
 
