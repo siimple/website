@@ -3,8 +3,9 @@
 {% block documentation_menu %}
 <a href="./" class="siimple-docs-menu-group">GETTING STARTED</a>
 <a href="./typography" class="siimple-docs-menu-group">TYPOGRAPHY</a>
-<a href="./typography#paragraph" class="siimple-docs-menu-item">Paragraph</a>
+<a href="./typography#codes" class="siimple-docs-menu-item">Codes</a>
 <a href="./typography#headings" class="siimple-docs-menu-item">Headings</a>
+<a href="./typography#paragraph" class="siimple-docs-menu-item">Paragraph</a>
 <a href="./elements" class="siimple-docs-menu-group">ELEMENTS</a>
 <a href="./form" class="siimple-docs-menu-group">FORM</a>
 <a href="./grid" class="siimple-docs-menu-group">GRID</a>
@@ -21,23 +22,18 @@
 <pre class="siimple-pre">&lt;link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700"&gt;</pre>
 
 
-<!-- Paragraph documentation -->
-<a name="paragraph"></a>
-<div class="siimple-h3">Paragraph</div>
-<p class="siimple-p">
-  You can create a paragraph by adding the <code class="siimple-code">siimple-p</code> or <code class="siimple-code">siimple-paragraph</code>
-  class to your <code class="siimple-code">div</code> or <code class="siimple-code">p</code> element.
+<!-- Codes -->
+<a name="codes"></a>
+<div class="siimple-h3">Codes</div>
+<p class="siimple-paragraph">
+  You can use the <code class="siimple-code">siimple-code</code> class adding a piece of code inline, or the <code class="siimple-code">siimple-pre</code>
+  class to display code in blocks.
 </p>
 <div class="documentation-example">
-  <p class="siimple-p">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-  </p>
+  <div class="siimple-pre">This is a code block</div>
 </div>
 <pre class="siimple-pre">
-&lt;p class="siimple-p"&gt;
-  Lorem ipsum dolor sit amet, consectetur adipiscing...
-&lt;/p&gt;
+&lt;pre class="siimple-pre"&gt;This is a code block&lt;/pre&gt;
 </pre>
 
 
@@ -62,6 +58,26 @@
 &lt;div class="siimple-h4"&gt;Heading 4&lt;/div&gt;
 &lt;div class="siimple-h5"&gt;Heading 5&lt;/div&gt;
 &lt;div class="siimple-h6"&gt;Heading 6&lt;/div&gt;
+</pre>
+
+
+<!-- Paragraph documentation -->
+<a name="paragraph"></a>
+<div class="siimple-h3">Paragraph</div>
+<p class="siimple-p">
+  You can create a paragraph by adding the <code class="siimple-code">siimple-p</code> or <code class="siimple-code">siimple-paragraph</code>
+  class to your <code class="siimple-code">div</code> or <code class="siimple-code">p</code> element.
+</p>
+<div class="documentation-example">
+  <p class="siimple-p">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+  </p>
+</div>
+<pre class="siimple-pre">
+&lt;p class="siimple-p"&gt;
+  Lorem ipsum dolor sit amet, consectetur adipiscing...
+&lt;/p&gt;
 </pre>
 {% endblock %}
 
