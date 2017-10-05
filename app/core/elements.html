@@ -1,0 +1,42 @@
+{% extends "documentation.html" %}
+
+{% block documentation_menu %}
+<a href="./" class="siimple-docs-menu-group">GETTING STARTED</a>
+<a href="./typography" class="siimple-docs-menu-group">TYPOGRAPHY</a>
+<a href="./elements" class="siimple-docs-menu-group">ELEMENTS</a>
+<a href="./elements#alert" class="siimple-docs-menu-item">Alert</a>
+<a href="./elements#button" class="siimple-docs-menu-item">Button</a>
+<a href="./elements#close" class="siimple-docs-menu-item">Close</a>
+<a href="./elements#spinner" class="siimple-docs-menu-item">Spinner</a>
+<a href="./form" class="siimple-docs-menu-group">FORM</a>
+<a href="./grid" class="siimple-docs-menu-group">GRID</a>
+{% endblock %}
+
+{% block documentation_content %}
+<div class="siimple-h2">Elements</div>
+
+<!-- Alert -->
+<a name="alert"></a>
+<div class="siimple-h3">Alert</div>
+<p class="siimple-paragraph">
+  Add <code class="siimple-code">siimple-alert</code> to transform a <code class="siimple-code">div</code> into an alert. Also,
+  you can specify the alert color by adding <code class="siimple-code">siimple-alert--[COLOR]</code>.
+</p>
+<div class="documentation-example">
+  <div class="siimple-alert siimple-alert--navy">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  </div>
+  <div class="siimple-alert siimple-alert--green">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  </div>
+  <div class="siimple-alert siimple-alert--teal">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  </div>
+</div>
+
+{% endblock %}
+
+{% block documentation_navigation %}
+<a href="./typography" class="siimple-docs-navigation-prev">Typography</a>
+<a href="./form" class="siimple-docs-navigation-next">Form</a>
+{% endblock %}
