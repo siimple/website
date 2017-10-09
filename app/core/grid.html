@@ -1,0 +1,221 @@
+{% extends "documentation.html" %}
+
+{% block documentation_menu %}
+<div class="documentation-logo siimple-color--blue">core</div>
+<a href="./" class="siimple-docs-menu-group">GETTING STARTED</a>
+<a href="./typography" class="siimple-docs-menu-group">TYPOGRAPHY</a>
+<a href="./elements" class="siimple-docs-menu-group">ELEMENTS</a>
+<a href="./form" class="siimple-docs-menu-group">FORM</a>
+<a href="./grid" class="siimple-docs-menu-group">GRID</a>
+<a href="./grid#building" class="siimple-docs-menu-item">Building a grid</a>
+<a href="./grid#sizes" class="siimple-docs-menu-item">Sizes</a>
+{% endblock %}
+
+{% block documentation_content %}
+<title>Grid - siimple core documentation</title>
+
+<!-- Grid demo style -->
+<style>
+  .demo-grid
+  {
+    background-color: #1be4c9;
+    color: #ffffff;
+    text-align: center;
+    height: 34px;
+    line-height: 34px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+</style>
+
+<div class="siimple-h2">Grid</div>
+<div class="siimple-paragraph">
+  <b>siimple-core</b> includes a responsive grid system with 12 columns for desktop, tablet and phone screens. The grid is
+</div>
+<div class="documentation-example">
+  <div class="siimple-grid">
+    <div class="siimple-grid-row">
+      <div class="siimple-grid-col siimple-grid-col--12">
+        <div class="demo-grid">12</div>
+      </div>
+    </div>
+    <div class="siimple-grid-row">
+      <div class="siimple-grid-col siimple-grid-col--6">
+        <div class="demo-grid">6</div>
+      </div>
+      <div class="siimple-grid-col siimple-grid-col--6">
+        <div class="demo-grid">6</div>
+      </div>
+    </div>
+    <div class="siimple-grid-row">
+      <div class="siimple-grid-col siimple-grid-col--4">
+        <div class="demo-grid">4</div>
+      </div>
+      <div class="siimple-grid-col siimple-grid-col--4">
+        <div class="demo-grid">4</div>
+      </div>
+      <div class="siimple-grid-col siimple-grid-col--4">
+        <div class="demo-grid">4</div>
+      </div>
+    </div>
+    <div class="siimple-grid-row">
+      <div class="siimple-grid-col siimple-grid-col--3">
+        <div class="demo-grid">3</div>
+      </div>
+      <div class="siimple-grid-col siimple-grid-col--3">
+        <div class="demo-grid">3</div>
+      </div>
+      <div class="siimple-grid-col siimple-grid-col--3">
+        <div class="demo-grid">3</div>
+      </div>
+      <div class="siimple-grid-col siimple-grid-col--3">
+        <div class="demo-grid">3</div>
+      </div>
+    </div>
+    <div class="siimple-grid-row">
+      <div class="siimple-grid-col siimple-grid-col--2">
+        <div class="demo-grid">2</div>
+      </div>
+      <div class="siimple-grid-col siimple-grid-col--2">
+        <div class="demo-grid">2</div>
+      </div>
+      <div class="siimple-grid-col siimple-grid-col--2">
+        <div class="demo-grid">2</div>
+      </div>
+      <div class="siimple-grid-col siimple-grid-col--2">
+        <div class="demo-grid">2</div>
+      </div>
+      <div class="siimple-grid-col siimple-grid-col--2">
+        <div class="demo-grid">2</div>
+      </div>
+      <div class="siimple-grid-col siimple-grid-col--2">
+        <div class="demo-grid">2</div>
+      </div>
+    </div>
+    <div class="siimple-grid-row">
+      <div class="siimple-grid-col siimple-grid-col--1">
+        <div class="demo-grid">1</div>
+      </div>
+      <div class="siimple-grid-col siimple-grid-col--1">
+        <div class="demo-grid">1</div>
+      </div>
+      <div class="siimple-grid-col siimple-grid-col--1">
+        <div class="demo-grid">1</div>
+      </div>
+      <div class="siimple-grid-col siimple-grid-col--1">
+        <div class="demo-grid">1</div>
+      </div>
+      <div class="siimple-grid-col siimple-grid-col--1">
+        <div class="demo-grid">1</div>
+      </div>
+      <div class="siimple-grid-col siimple-grid-col--1">
+        <div class="demo-grid">1</div>
+      </div>
+      <div class="siimple-grid-col siimple-grid-col--1">
+        <div class="demo-grid">1</div>
+      </div>
+      <div class="siimple-grid-col siimple-grid-col--1">
+        <div class="demo-grid">1</div>
+      </div>
+      <div class="siimple-grid-col siimple-grid-col--1">
+        <div class="demo-grid">1</div>
+      </div>
+      <div class="siimple-grid-col siimple-grid-col--1">
+        <div class="demo-grid">1</div>
+      </div>
+      <div class="siimple-grid-col siimple-grid-col--1">
+        <div class="demo-grid">1</div>
+      </div>
+      <div class="siimple-grid-col siimple-grid-col--1">
+        <div class="demo-grid">1</div>
+      </div>
+    </div>
+  </div>
+</div>
+<pre class="siimple-pre">
+&lt;div class="siimple-grid"&gt;
+  &lt;div class="siimple-grid-row"&gt;
+    &lt;div class="siimple-grid-col siimple-grid-col--12"&gt;12&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="siimple-grid-row"&gt;
+    &lt;div class="siimple-grid-col siimple-grid-col--6"&gt;6&lt;/div&gt;
+    &lt;div class="siimple-grid-col siimple-grid-col--6"&gt;6&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="siimple-grid-row"&gt;
+    &lt;div class="siimple-grid-col siimple-grid-col--4"&gt;4&lt;/div&gt;
+    &lt;div class="siimple-grid-col siimple-grid-col--4"&gt;4&lt;/div&gt;
+    &lt;div class="siimple-grid-col siimple-grid-col--4"&gt;4&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="siimple-grid-row"&gt;
+    &lt;div class="siimple-grid-col siimple-grid-col--3"&gt;3&lt;/div&gt;
+    &lt;div class="siimple-grid-col siimple-grid-col--3"&gt;3&lt;/div&gt;
+    &lt;div class="siimple-grid-col siimple-grid-col--3"&gt;3&lt;/div&gt;
+    &lt;div class="siimple-grid-col siimple-grid-col--3"&gt;3&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+<!-- Building a grid -->
+<a name="building"></a>
+<div class="siimple-h3">Building a grid</div>
+<div class="siimple-paragraph">
+  Create a new div element and add the <code class="siimple-code">siimple-grid</code> class using the class attribute.
+</div>
+<pre class="siimple-pre">
+&lt;div class="siimple-grid"&gt;&lt;/div&gt;
+</pre>
+<div class="siimple-paragraph">
+  For each row of your grid, you must add a new div element with the <code class="siimple-code">siimple-grid-row</code> class.
+</div>
+<pre class="siimple-pre">
+&lt;div class="siimple-grid"&gt;
+  &lt;div class="siimple-grid-row"&gt;&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+<div class="siimple-paragraph">
+  For each cell, add a div element with the class <code class="siimple-code">siimple-grid-col</code> inside the row div. Also, you must specify the cell size adding a <code class="siimple-code">siimple-grid-col--COLUMN</code>, where <code class="siimple-code">COLUMN</code> is an integer from 1 to 12 that specifies the column size.
+</div>
+<div class="siimple-alert siimple-alert--orange">
+  Remember that the column sizes <b>must add up to twelve for a row</b>.
+</div>
+<pre class="siimple-pre">
+&lt;div class="siimple-grid"&gt;
+  &lt;div class="siimple-grid-row"&gt;
+    &lt;div class="siimple-grid-col siimple-grid-col--6"&gt;Cell 1&lt;/div&gt;
+    &lt;div class="siimple-grid-col siimple-grid-col--6"&gt;Cell 2&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+<div class="siimple-paragraph">
+  Now yor grid are ready to use!
+</div>
+<div class="documentation-example">
+  <div class="siimple-grid">
+    <div class="siimple-grid-row">
+      <div class="siimple-grid-col siimple-grid-col--6">
+        <div class="demo-grid">Cell 1</div>
+      </div>
+      <div class="siimple-grid-col siimple-grid-col--6">
+        <div class="demo-grid">Cell 2</div>
+      </div>
+    </div>
+  </div>
+</div>
+<pre class="siimple-pre">
+&lt;div class="siimple-grid"&gt;
+  &lt;div class="siimple-grid-row"&gt;
+    &lt;div class="siimple-grid-col siimple-grid-col--6"&gt;Cell 1&lt;/div&gt;
+    &lt;div class="siimple-grid-col siimple-grid-col--6"&gt;Cell 2&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+<!-- Grid sizes -->
+<a name="sizes"></a>
+<div class="siimple-h3">Sizes</div>
+
+{% endblock %}
+
+{% block documentation_navigation %}
+<a href="./form" class="siimple-docs-navigation-prev">Form</a>
+{% endblock %}
