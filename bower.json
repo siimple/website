@@ -1,6 +1,7 @@
 {
   "name": "siimple-website",
-  "description": "The siimple website",
+  "description": "The code that runs the siimple project website",
+  "private": true,
   "dependencies":
   {
     "siimple": "siimple/siimple#master",
