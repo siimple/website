@@ -2,7 +2,7 @@
   "name": "siimple-website",
   "version": "0.0.1",
   "private": true,
-  "description": "Siimple website",
+  "description": "The code that runs the siimple project website",
   "author": "Josemi Juanes <josemijuanes@gmail.com>",
   "license": "MIT",
   "homepage": "http://siimple.juanes.xyz/",
