@@ -7,6 +7,7 @@
     "siimple-colors": "siimple/siimple-colors#master",
     "siimple-layout": "siimple/siimple-layout#master",
     "siimple-experiments": "siimple/siimple-experiments#master",
+    "docu": "siimple/docu#master",
     "artwork": "siimple/artwork#master"
   }
 }
