@@ -1,20 +1,22 @@
 {% extends "base.html" %}
 
 {% block content %}
-<div class="siimple-docs siimple-docs--js">
-  <div class="siimple-docs-sidebar">
-    <div class="siimple-docs-menu">
+<div class="plume plume--js">
+  <div class="plume-sidebar">
+    <div class="plume-menu">
       {% block documentation_menu %}{% endblock %}
     </div>
   </div>
-  <div class="siimple-docs-navbar">
-    <div class="siimple-docs-navbar-menu"><span></span></div>
-  </div>
-  <div class="siimple-docs-content">
+  <div class="plume-toggle"><span></span></div>
+  {% block documentation_header %}{% endblock %}
+  <div class="plume-content">
     {% block documentation_content %}{% endblock %}
   </div>
-  <div class="siimple-docs-navigation">
+  <div class="plume-navigation">
     {% block documentation_navigation %}{% endblock %}
+  </div>
+  <div class="plume-footer">
+    Here goes the footer
   </div>
 </div>
 {% endblock %}
