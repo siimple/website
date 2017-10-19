@@ -59,9 +59,9 @@ gulp.task('copy', function()
   gulp.src('./bower_components/siimple-colors/dist/siimple-colors.css').pipe(gulp.dest('./dist/css'));
   gulp.src('./bower_components/siimple-layout/dist/siimple-layout.css').pipe(gulp.dest('./dist/css'));
 
-  //Copy the experiments files
-  gulp.src('./bower_components/siimple-experiments/docs/dist/siimple-docs.css').pipe(gulp.dest('./dist/css'));
-  gulp.src('./bower_components/siimple-experiments/docs/dist/siimple-docs.js').pipe(gulp.dest('./dist/js'));
+  //Copy the plume layout files
+  gulp.src('./bower_components/plume/dist/plume.css').pipe(gulp.dest('./dist/css'));
+  gulp.src('./bower_components/plume/dist/plume.js').pipe(gulp.dest('./dist/js'));
 });
 
 //Default task
