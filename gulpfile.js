@@ -14,13 +14,13 @@ gulp.task('clean', function()
 });
 
 //Build task
-gulp.task('build', ['build-html', 'build-scss']);
+gulp.task('build', ['build:html', 'build:css', 'build:copy']);
 
 //Compile the html files
-gulp.task('build-html', function()
+gulp.task('build:html', function()
 {
   //Get the source files
-  gulp.src('./app/**/*.html')
+  gulp.src('./src/**/*.html')
 
   //Build the page
   .pipe(nunjucks({ path: './templates', data: {} }))
@@ -29,11 +29,11 @@ gulp.task('build-html', function()
   .pipe(gulp.dest('./dist/'));
 });
 
-//Compile the scss files
-gulp.task('build-scss', function()
+//Compile the scss files and generate the css files
+gulp.task('build:css', function()
 {
   //Get the scss files
-  gulp.src('./app/scss/**.scss')
+  gulp.src('./src/scss/**.scss')
 
   //Build the scss files
   .pipe(sass({ includePaths: [ 'bower_components', 'node_modules' ] }).on('error', sass.logError))
@@ -43,16 +43,16 @@ gulp.task('build-scss', function()
 });
 
 //Copy the assets and other files
-gulp.task('copy', function()
+gulp.task('build:copy', function()
 {
   //Copy the yaml files
-  gulp.src('./*.yaml').pipe(gulp.dest('./dist/'));
+  gulp.src(['./app.yaml']).pipe(gulp.dest('./dist/'));
 
   //Copy the javascript files
-  gulp.src('./app/js/*.js').pipe(gulp.dest('./dist/js'));
+  gulp.src('./src/js/*.js').pipe(gulp.dest('./dist/js'));
 
   //Copy the css files
-  gulp.src('./app/css/*.css').pipe(gulp.dest('./dist/css'));
+  //gulp.src('./app/css/*.css').pipe(gulp.dest('./dist/css'));
 
   //Copy the siimple modules
   gulp.src('./bower_components/siimple/dist/siimple.css').pipe(gulp.dest('./dist/css'));
@@ -65,4 +65,4 @@ gulp.task('copy', function()
 });
 
 //Default task
-gulp.task('default', [ 'clean', 'build', 'copy' ]);
+gulp.task('default', [ 'clean', 'build' ]);
