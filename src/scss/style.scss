@@ -12,3 +12,33 @@ body
   margin: 0px !important;
   padding: 0px !important;
 }
+
+//Contribute style
+.contribute
+{
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  //Contribute button
+  &-btn
+  {
+
+  }
+}
+
+//Footer styles
+.footer
+{
+  //Footer heart
+  &-heart::after
+  {
+    content: "\2764";
+    color: var(--siimple-red);
+  }
+
+  //Footer cookies
+  &-cookies
+  {
+
+  }
+}
