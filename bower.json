@@ -6,8 +6,6 @@
   {
     "siimple": "siimple/siimple#master",
     "siimple-colors": "siimple/siimple-colors#master",
-    "siimple-layout": "siimple/siimple-layout#master",
-    "siimple-experiments": "siimple/siimple-experiments#master",
     "plume": "siimple/plume#master"
   }
 }
