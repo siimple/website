@@ -21,6 +21,7 @@
   },
   "scripts":
   {
-    "serve": "cd ./dist && dev_appserver.py app.yaml"
+    "serve": "cd ./dist && dev_appserver.py app.yaml",
+    "deploy": "cd ./dist && gcloud app deploy app.yaml"
   }
 }
