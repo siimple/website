@@ -1,0 +1,41 @@
+{% set page_color = "blue" %}
+
+{% extends "page.html" %}
+
+{% block header %}
+<title>siimple</title>
+<link rel="stylesheet" type="text/css" href="/css/home.css">
+{% endblock %}
+
+{% block page_content %}
+<!-- Jumbotron -->
+<div class="siimple-layout-jumbotron siimple-layout-jumbotron--blue jumbotron-gradient">
+  <div class="siimple-layout--large" align="center">
+    <div class="siimple-layout-jumbotron-title">Be flat. Be minimal. Be siimple</div>
+  </div>
+</div>
+
+<!-- Projects list -->
+<div class="siimple-layout-content siimple-layout--large home-projects" align="center">
+  <div class="home-projects-title">Projects</div>
+  <div class="home-projects-detail">Section detail</div>
+  <div class="home-projects-box">
+    <div class="home-projects-box-header siimple-bg--blue">siimple-core</div>
+    <div class="home-projects-box-content">
+      <div class="siimple-paragraph">
+        A light, responsive and open source framework for design flat and clean websites.
+      </div>
+      <a href="/core/" class="siimple-btn siimple-btn--blue">Get started</a>
+    </div>
+  </div>
+  <div class="home-projects-box">
+    <div class="home-projects-box-header siimple-bg--pink">siimple-colors</div>
+    <div class="home-projects-box-content">
+      <div class="siimple-paragraph">
+        Core documentation
+      </div>
+      <a href="/colors/" class="siimple-btn siimple-btn--pink">Get started</a>
+    </div>
+  </div>
+</div>
+{% endblock %}
