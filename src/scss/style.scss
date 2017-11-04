@@ -1,0 +1,14 @@
+//Import dependencies
+@import "siimple/scss/_all.scss";
+@import "siimple-colors/scss/_all.scss";
+
+//Body and html default styles
+body
+{
+  font-family: $siimple-default-text-font;
+  font-size: $siimple-default-text-size;
+  color: $siimple-default-text-color;
+  font-weight: normal;
+  margin: 0px !important;
+  padding: 0px !important;
+}
