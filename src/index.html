@@ -2,33 +2,62 @@
 
 {% block header %}
 <title>siimple</title>
-<link rel="stylesheet" type="text/css" href="/css/home.css">
+<link rel="stylesheet" type="text/css" href="/css/index.css">
 {% endblock %}
 
 {% block page_content %}
 <!-- Jumbotron -->
-<div class="siimple-layout-jumbotron siimple-layout-jumbotron--blue jumbotron-gradient">
+<div class="siimple-jumbotron siimple-jumbotron--blue jumbotron-gradient">
   <div class="siimple-layout--large" align="center">
-    <div class="siimple-layout-jumbotron-title">Be flat. Be minimal. Be siimple</div>
+    <div class="siimple-jumbotron-title jumbotron-text">3.0.0</div>
+    <div class="siimple-jumbotron-title">flat. minimal. siimple.</div>
   </div>
 </div>
 
+<!-- Description -->
+<div class="siimple-content siimple-content--large features" align="center">
+  <div class="siimple-grid">
+    <div class="siimple-grid-row">
+      <div class="siimple-grid-col siimple-grid-col--4 siimple-grid-col-sm--12 features-col">
+        <div class="features-title">Modular</div>
+        <div class="features-detail">
+          <b>siimple</b> has built using <b>SASS/SCSS</b>. Just import only what you need!
+        </div>
+      </div>
+      <div class="siimple-grid-col siimple-grid-col--4 siimple-grid-col-sm--12 features-col">
+        <div class="features-title">Responsive</div>
+        <div class="features-detail">
+          <b>siimple</b> allows you to design a web page that looks great on all devices (desktops, tablets and phones).
+        </div>
+      </div>
+      <div class="siimple-grid-col siimple-grid-col--4 siimple-grid-col-sm--12 features-col">
+        <div class="features-title">Elegant</div>
+        <div class="features-detail">
+          <b>siimple</b> combines an elegant, modern, flat and minimalistic design.
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="features-get-started">Get started now!</div>
+  <a href="./documentation" class="features-btn">Read the documentation</a>
+</div>
+
 <!-- Projects list -->
-<div class="siimple-layout-content siimple-layout--large home-projects" align="center">
-  <div class="home-projects-title">Projects</div>
-  <div class="home-projects-detail">Section detail</div>
-  <div class="home-projects-box">
-    <div class="home-projects-box-header siimple-bg--blue">siimple-core</div>
-    <div class="home-projects-box-content">
+<div class="siimple-content siimple--large projects" align="center">
+  <div class="projects-title">Projects</div>
+  <div class="projects-detail">Section detail</div>
+  <div class="project">
+    <div class="project-header siimple-bg--blue">siimple-core</div>
+    <div class="project-content">
       <div class="siimple-paragraph">
         A light, responsive and open source framework for design flat and clean websites.
       </div>
       <a href="/core/" class="siimple-btn siimple-btn--blue">Get started</a>
     </div>
   </div>
-  <div class="home-projects-box">
-    <div class="home-projects-box-header siimple-bg--pink">siimple-colors</div>
-    <div class="home-projects-box-content">
+  <div class="project">
+    <div class="project-header siimple-bg--pink">siimple-colors</div>
+    <div class="project-content">
       <div class="siimple-paragraph">
         Core documentation
       </div>
