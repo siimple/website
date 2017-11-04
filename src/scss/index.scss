@@ -7,12 +7,7 @@
 {
   padding-top: 150px;
   padding-bottom: 150px;
-  
-  //Jumbotron gradient
-  &-gradient
-  {
-    background: linear-gradient(135deg, $siimple-teal 0%,$siimple-blue 100%);
-  }
+  background: linear-gradient(135deg, $siimple-teal 0%,$siimple-blue 100%);
 
   //Jumbotron text
   &-text
