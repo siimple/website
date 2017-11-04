@@ -1,6 +1,7 @@
 runtime: python27
 api_version: 1
 threadsafe: yes
+service: default
 
 handlers:
 
@@ -16,18 +17,22 @@ handlers:
   mime_type: text/html
   static_files: index.html
   upload: index.html
+  secure: always
 
 - url: /(.+)/
   mime_type: text/html
   static_files: \1/index.html
   upload: (.+)/index.html
+  secure: always
 
 - url: /(.+)/(.+)
   mime_type: text/html
   static_files: \1/\2.html
   upload: (.*)/(.*)
+  secure: always
 
 - url: /(.+)
   mime_type: text/html
   static_files: \1.html
   upload: (.+)
+  secure: always
