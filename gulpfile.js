@@ -20,10 +20,10 @@ gulp.task('build', ['build:html', 'build:css', 'build:copy']);
 gulp.task('build:html', function()
 {
   //Get the source files
-  gulp.src('./src/**/*.html')
+  gulp.src(['./src/**/*.html', '!./src/_templates/**.html'])
 
   //Build the page
-  .pipe(nunjucks({ path: './templates', data: {} }))
+  .pipe(nunjucks({ path: './src/_templates/', data: {} }))
 
   //Output path
   .pipe(gulp.dest('./dist/'));
@@ -33,7 +33,7 @@ gulp.task('build:html', function()
 gulp.task('build:css', function()
 {
   //Get the scss files
-  gulp.src('./src/scss/**.scss')
+  gulp.src('./src/_scss/**.scss')
 
   //Build the scss files
   .pipe(sass({ includePaths: [ 'bower_components', 'node_modules' ] }).on('error', sass.logError))
