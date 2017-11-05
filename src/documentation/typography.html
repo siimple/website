@@ -1,16 +1,20 @@
 {% extends "documentation.html" %}
 
 {% block documentation_menu %}
-<div class="documentation-logo siimple-color--blue">core</div>
-<a href="./" class="siimple-docs-menu-group">GETTING STARTED</a>
-<a href="./typography" class="siimple-docs-menu-group">TYPOGRAPHY</a>
-<a href="./typography#blockquote" class="siimple-docs-menu-item">Blockquote</a>
-<a href="./typography#code" class="siimple-docs-menu-item">Code</a>
-<a href="./typography#heading" class="siimple-docs-menu-item">Heading</a>
-<a href="./typography#paragraph" class="siimple-docs-menu-item">Paragraph</a>
-<a href="./elements" class="siimple-docs-menu-group">ELEMENTS</a>
-<a href="./form" class="siimple-docs-menu-group">FORM</a>
-<a href="./grid" class="siimple-docs-menu-group">GRID</a>
+<a href="./" class="plume-menu-group">GETTING STARTED</a>
+<a href="./typography" class="plume-menu-group">TYPOGRAPHY</a>
+<a href="./typography#blockquote" class="plume-menu-item">Blockquote</a>
+<a href="./typography#code" class="plume-menu-item">Code</a>
+<a href="./typography#heading" class="plume-menu-item">Heading</a>
+<a href="./typography#paragraph" class="plume-menu-item">Paragraph</a>
+<a href="./elements" class="plume-menu-group">ELEMENTS</a>
+<a href="./form" class="plume-menu-group">FORM</a>
+<a href="./grid" class="plume-menu-group">GRID</a>
+{% endblock %}
+
+{% block documentation_header %}
+<div class="plume-header-title">siimple-core</div>
+<div class="plume-header-subtitle">Typography</div>
 {% endblock %}
 
 {% block documentation_content %}
@@ -18,7 +22,6 @@
 <title>Typography - siimple core documentation</title>
 
 <!-- Typography introduction -->
-<div class="siimple-h2">Typography</div>
 <p class="siimple-p">
   <b>siimple</b> provides you text styles for <a class="siimple-link">links</a> using the <code class="siimple-code">siimple-link</code>
   class and <small class="siimple-small">small text</small> using the <code class="siimple-code">siimple-small</code> class.
@@ -29,7 +32,7 @@
 
 <!-- Blockquote -->
 <a name="blockquote"></a>
-<div class="siimple-h3">Blockquote</div>
+<div class="plume-content-title">Blockquote</div>
 <p class="siimple-paragraph">
   Use <code class="siimple-code">siimple-blockquote</code> class to style your blockquotes:
 </p>
@@ -46,7 +49,7 @@
 
 <!-- Code -->
 <a name="code"></a>
-<div class="siimple-h3">Code</div>
+<div class="plume-content-title">Code</div>
 <p class="siimple-paragraph">
   You can use the <code class="siimple-code">siimple-code</code> class adding a piece of code inline, or the <code class="siimple-code">siimple-pre</code>
   class to display code in blocks.
@@ -60,7 +63,7 @@
 
 <!-- Heading documentation -->
 <a name="heading"></a>
-<div class="siimple-h3">Heading</div>
+<div class="plume-content-title">Heading</div>
 <p class="siimple-p">
   Use <code class="siimple-code">siimple-heading[1-6]</code> or <code class="siimple-code">siimple-h[1-6]</code> for each heading style.
 </p>
@@ -83,7 +86,7 @@
 
 <!-- Paragraph documentation -->
 <a name="paragraph"></a>
-<div class="siimple-h3">Paragraph</div>
+<div class="plume-content-title">Paragraph</div>
 <p class="siimple-p">
   You can create a paragraph by adding the <code class="siimple-code">siimple-p</code> or <code class="siimple-code">siimple-paragraph</code>
   class to your <code class="siimple-code">div</code> or <code class="siimple-code">p</code> element.
@@ -102,6 +105,6 @@
 {% endblock %}
 
 {% block documentation_navigation %}
-<a href="./" class="siimple-docs-navigation-prev">Getting started</a>
-<a href="./elements" class="siimple-docs-navigation-next">Elements</a>
+<a href="./" class="plume-navigation-prev">Getting started</a>
+<a href="./elements" class="plume-navigation-next">Elements</a>
 {% endblock %}
