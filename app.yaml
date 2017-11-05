@@ -13,6 +13,10 @@ handlers:
   static_dir: js
   secure: always
 
+- url: /images
+  static_dir: images
+  secure: always
+
 - url: /
   mime_type: text/html
   static_files: index.html
@@ -27,12 +31,18 @@ handlers:
 
 - url: /(.+)/(.+)
   mime_type: text/html
-  static_files: \1/\2.html
+  static_files: \1/\2
   upload: (.*)/(.*)
+  secure: always
+
+- url: /(.+).html
+  mime_type: text/html
+  static_files: \1.html
+  upload: (.+)
   secure: always
 
 - url: /(.+)
   mime_type: text/html
-  static_files: \1.html
-  upload: (.+)
+  static_files: \1/index.html
+  upload: (.+)/index.html
   secure: always
