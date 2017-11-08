@@ -1,9 +1,38 @@
 //Import dependencies
+@import "siimple/scss/_all.scss";
 @import "siimple-colors/scss/_all.scss";
+
+//Documentation example variables
+$documentation-example-border-size: 2px;
+$documentation-example-border-radius: 5px;
+$documentation-example-padding: 10px;
 
 //Documentation class
 .documentation
 {
+  //Documentation example
+  &-example
+  {
+    display: block;
+    width: calc(100% - 2 * #{$documentation-example-padding} - 2 * #{$documentation-example-border-size});
+    border-radius: $documentation-example-border-radius;
+    border-bottom-left-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+    border: $documentation-example-border-size solid $siimple-grey-2;
+    padding: $documentation-example-padding;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  //Documentation code
+  &-code
+  {
+    @include siimple-pre();
+    border-top-left-radius: 0px !important;
+    border-top-right-radius: 0px !important;
+    margin-top: 0px;
+  }
+
   //Documentation improve
   &-improve
   {
