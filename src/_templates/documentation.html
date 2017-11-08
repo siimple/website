@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 
 {% block content %}
+<link rel="stylesheet" type="text/css" href="/css/documentation.css">
 <div class="plume plume--js">
   <div class="plume-sidebar">
     <div class="plume-menu">
@@ -16,6 +17,11 @@
   </div>
   <div class="plume-navigation">
     {% block documentation_navigation %}{% endblock %}
+  </div>
+  <div class="plume-content documentation-improve">
+    <div class="documentation-improve-rule"></div>
+    Found a mistake or want to help improve this documentation?
+    <a href="https://github.com/siimple/website" target="_blank" class="siimple-link">Suggest changes on GitHub</a>
   </div>
   <div class="plume-footer">
     Here goes the footer
