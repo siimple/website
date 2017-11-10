@@ -3,6 +3,7 @@
 {% block documentation_menu %}
 <a href="/documentation/" class="plume-menu-group">GETTING STARTED</a>
 <a href="/documentation/#installation" class="plume-menu-item">Installation</a>
+<a href="/documentation/#modular" class="plume-menu-item">Modular</a>
 <a href="/documentation/#browser-support" class="plume-menu-item">Browser support</a>
 <a href="/documentation/typography.html" class="plume-menu-group">TYPOGRAPHY</a>
 <a href="/documentation/elements.html" class="plume-menu-group">ELEMENTS</a>
@@ -33,13 +34,13 @@
 <a name="installation"></a>
 <div class="plume-heading2">Installation</div>
 <p class="siimple-p">
-  There are 3 ways to get started with <b>siimple</b> in your project.
+  There are 3 ways to get started with <b>siimple</b> in your project. We recommend that you import the framework using <b>a package manager</b>.
 </p>
 
 <!-- Install with npm or bower -->
 <div class="siimple-h5">1. Install using a package manager</div>
 <p class="siimple-p">
-  This is the recommended method. You can use <a href="https://www.npmjs.com/package/siimple" class="siimple-a" target="_blank">npm</a> or
+  You can use <a href="https://www.npmjs.com/package/siimple" class="siimple-a" target="_blank">npm</a> or
   <a href="http://bower.io" class="siimple-a" target="_blank">bower</a> to download the latest version of <b>siimple</b>.
 </p>
 <p class="siimple-paragraph">Install using <b>npm</b>:</p>
@@ -63,10 +64,22 @@
 <!-- Dowmload from github -->
 <div class="siimple-h5">3. Download manually from the repository</div>
 <p class="siimple-p">
-  You can visit the repository hosted on <a href="https://github.com/siimple/siimple" class="siimple-link" target="_blank">GitHub</a> and download the
+  You can visit the repository hosted on <a href="{{ url_repo }}" class="siimple-link" target="_blank">GitHub</a> and download the
   latest version from the <a href="https://github.com/siimple/siimple/releases" class="siimple-link" target="_blank">releases page</a>.
   You can find the CSS files on the <code class="siimple-code">./dist/</code> folder, so you can copy them to your project.
 </p>
+
+
+<!-- Modular -->
+<a name="modular"></a>
+<div class="plume-heading2">Modular</div>
+<p class="siimple-paragraph">
+  <b>siimple</b> contains
+</p>
+<p class="siimple-paragraph">
+  If you are interested in using the <b>SCSS</b> files, check the build guide in the official <a href="{{ url_repo }}" class="siimple-link" target="_blank">repository</a>.
+</p>
+
 
 <!-- Browser support -->
 <a name="browser-support"></a>
@@ -74,14 +87,63 @@
 <p class="siimple-paragraph">
   <b>siimple</b> is supported by the latest versions of most mobile and desktop browsers.
 </p>
-<ul>
-  <li>Chrome: <span class="siimple-color--green">supported</span></li>
-  <li>Opera: <span class="siimple-color--green">supported</span></li>
-  <li>Firefox: <span class="siimple-color--green">supported</span></li>
-  <li>Safari: <span class="siimple-color--green">supported</span></li>
-  <li>Edge: <span class="siimple-color--green">supported</span></li>
-  <li>Internet Explorer: <span class="siimple-color--yellow">10+</span></li>
-</ul>
+
+<div style="width:100%;overflow-x:auto;">
+  <div class="siimple-table siimple-table--stripped siimple-table--border">
+    <div class="siimple-table-header">
+      <div class="siimple-table-row" style="font-weight:bold;">
+        <div class="siimple-table-cell"></div>
+        <div class="siimple-table-cell">Chrome</div>
+        <div class="siimple-table-cell">Firefox</div>
+        <div class="siimple-table-cell">Safari</div>
+        <div class="siimple-table-cell">Edge</div>
+        <div class="siimple-table-cell">Explorer</div>
+      </div>
+    </div>
+    <div class="siimple-table-body">
+      <div class="siimple-table-row">
+        <div class="siimple-table-cell" style="font-weight:bold;">Mac</div>
+        <div class="siimple-table-cell siimple-color--green">Supported</div>
+        <div class="siimple-table-cell siimple-color--green">Supported</div>
+        <div class="siimple-table-cell siimple-color--green">Supported</div>
+        <div class="siimple-table-cell">-</div>
+        <div class="siimple-table-cell">-</div>
+      </div>
+      <div class="siimple-table-row">
+        <div class="siimple-table-cell" style="font-weight:bold;">Linux</div>
+        <div class="siimple-table-cell siimple-color--green">Supported</div>
+        <div class="siimple-table-cell siimple-color--green">Supported</div>
+        <div class="siimple-table-cell">-</div>
+        <div class="siimple-table-cell">-</div>
+        <div class="siimple-table-cell">-</div>
+      </div>
+      <div class="siimple-table-row">
+        <div class="siimple-table-cell" style="font-weight:bold;">Windows</div>
+        <div class="siimple-table-cell siimple-color--green">Supported</div>
+        <div class="siimple-table-cell siimple-color--green">Supported</div>
+        <div class="siimple-table-cell siimple-color--green">Supported</div>
+        <div class="siimple-table-cell siimple-color--green">Supported</div>
+        <div class="siimple-table-cell siimple-color--orange">10+</div>
+      </div>
+      <div class="siimple-table-row">
+        <div class="siimple-table-cell" style="font-weight:bold;">Android</div>
+        <div class="siimple-table-cell siimple-color--green">Supported</div>
+        <div class="siimple-table-cell siimple-color--green">Supported</div>
+        <div class="siimple-table-cell">-</div>
+        <div class="siimple-table-cell">-</div>
+        <div class="siimple-table-cell">-</div>
+      </div>
+      <div class="siimple-table-row">
+        <div class="siimple-table-cell" style="font-weight:bold;">iOS</div>
+        <div class="siimple-table-cell siimple-color--green">Supported</div>
+        <div class="siimple-table-cell siimple-color--green">Supported</div>
+        <div class="siimple-table-cell siimple-color--green">Supported</div>
+        <div class="siimple-table-cell">-</div>
+        <div class="siimple-table-cell">-</div>
+      </div>
+    </div>
+  </div>
+</div>
 
 {% endblock %}
 
