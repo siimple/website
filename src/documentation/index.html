@@ -3,7 +3,9 @@
 {% block documentation_menu %}
 <a href="/documentation/" class="plume-menu-group">GETTING STARTED</a>
 <a href="/documentation/#installation" class="plume-menu-item">Installation</a>
-<a href="/documentation/#modular" class="plume-menu-item">Modular</a>
+<a href="/documentation/#customize" class="plume-menu-item">Customize</a>
+<a href="/documentation/#classes" class="plume-menu-item">Classes</a>
+<a href="/documentation/#font" class="plume-menu-item">Font</a>
 <a href="/documentation/#browser-support" class="plume-menu-item">Browser support</a>
 <a href="/documentation/typography.html" class="plume-menu-group">TYPOGRAPHY</a>
 <a href="/documentation/elements.html" class="plume-menu-group">ELEMENTS</a>
@@ -44,9 +46,9 @@
   <a href="http://bower.io" class="siimple-a" target="_blank">bower</a> to download the latest version of <b>siimple</b>.
 </p>
 <p class="siimple-paragraph">Install using <b>npm</b>:</p>
-<pre class="siimple-pre">npm install siimple --save</pre>
+<pre class="siimple-pre">$ npm install siimple --save</pre>
 <p class="siimple-p">Install using <b>bower</b>: </p>
-<pre class="siimple-pre">bower install siimple</pre>
+<pre class="siimple-pre">$ bower install siimple</pre>
 <p class="siimple-p">
   You can find the release CSS files in the <code class="siimple-code">./dist/</code> folder.
 </p>
@@ -70,14 +72,64 @@
 </p>
 
 
-<!-- Modular -->
-<a name="modular"></a>
-<div class="plume-heading2">Modular</div>
+<!-- Customize -->
+<a name="customize"></a>
+<div class="plume-heading2">Customize</div>
 <p class="siimple-paragraph">
-  <b>siimple</b> contains
+  You can customize <b>siimple</b> and build your own version by editing the SASS/SCSS files placed in the <code class="siimple-code">./scss</code> folder.
 </p>
+<div class="siimple-h5">Build siimple</div>
 <p class="siimple-paragraph">
-  If you are interested in using the <b>SCSS</b> files, check the build guide in the official <a href="{{ url_repo }}" class="siimple-link" target="_blank">repository</a>.
+  We use <a href="http://gulpjs.com" class="siimple-link" target="_blank">Gulp</a> for compiling the SCSS files and generate the final CSS file. Be sure that you have installed <a href="http://npmjs.com" class="siimple-link" target="_blank">NPM</a> and Gulp in your computer. Then, you must install all the Gulp dependencies by running the following command:
+</p>
+<pre class="siimple-pre">$ npm install</pre>
+<p class="siimple-paragraph">
+  You can compile the SCSS files running the <code class="siimple-code">gulp build</code> task, and minimize the compiled code running the <code class="siimple-code">gulp minimize</code> task. Compiled CSS files will be available in <code class="siimple-code">./dist</code> folder.
+</p>
+<div class="siimple-h5">Importing SASS/SCSS</div>
+<div class="siimple-p">
+  You can import <b>siimple</b> as a dependency using a package manager, and then import the SASS mixins in your project by adding the following line in your main <code class="siimple-code">scss</code> file:
+</div>
+<pre class="siimple-pre">@import "siimple/scss/_all.scss";</pre>
+<div class="siimple-p">
+  Remember that you take a look about how to use the <a href="https://github.com/sass/node-sass#includepaths" class="siimple-link" target="_blank">includePaths</a> option to resolve the <code class="siimple-code">@import</code> declarations.
+</div>
+
+
+<!-- Classes -->
+<a name="classes"></a>
+<div class="plume-heading2">Classes</div>
+<p class="siimple-p">
+  <b>siimple</b> is organized in five blocks: <b>typography</b>, <b>elements</b>, <b>layout</b>, <b>form</b> and <b>grid</b>. Each class has the prefix <code class="siimple-code">siimple</code> and is followed
+  by one dash and the component name, ie <code class="siimple-code">siimple-[ELEMENT]</code>, and each attribute
+  (like colors, disabled...) comes with double dash and followed by the attribute name, ie
+  <code class="siimple-code">siimple-[ELEMENT]--[ATTRIBUTE]</code>.
+</p>
+<p class="siimple-p">
+  For example, if you want to create a blue button, you must add <code class="siimple-code">siimple-btn</code> and
+  <code class="siimple-code">siimple-btn--blue</code> class to your <code class="siimple-code">div</code> element:
+</p>
+<div align="center" class="documentation-example">
+  <div class="siimple-btn siimple-btn--blue">My button</div>
+</div>
+<pre class="documentation-code">&lt;div class="siimple-btn siimple-btn--blue"&gt;My button&lt;/div&gt;</pre>
+
+
+<!-- Font -->
+<a name="font"></a>
+<div class="plume-heading2">Font</div>
+<p class="siimple-paragraph">
+  <b>siimple</b> uses <a class="siimple-a" href="https://fonts.google.com/specimen/Montserrat" target="_blank">Montserrat</a> as
+  the default font family, imported automatically from <b>Google Fonts</b>. If you want to use your own font, you can set that in your body tag:
+</p>
+<pre class="siimple-pre">
+body
+{
+  font-family: Verdana, Arial, 'sans-serif';
+}
+</pre>
+<p class="siimple-paragraph">
+  All the elements on your page will inherit this font-family and will overwrite the Montserrat font set by default by <b>siimple</b>.
 </p>
 
 
