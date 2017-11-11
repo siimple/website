@@ -10,6 +10,21 @@ $documentation-example-padding: 10px;
 //Documentation class
 .documentation
 {
+  //Colors block
+  &-colors
+  {
+    display: inline-block;
+    width: 216px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+  }
+
   //Documentation example
   &-example
   {
