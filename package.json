@@ -17,11 +17,12 @@
     "gulp": "3.9.1",
     "gulp-rename": "1.2.2",
     "gulp-nunjucks-render": "2.2.1",
-    "gulp-sass": "^3.1.0"
+    "gulp-sass": "^3.1.0",
+    "stattic": "^0.2.3"
   },
   "scripts":
   {
-    "dev": "cd ./dist && dev_appserver.py app.yaml",
+    "dev": "node ./node_modules/stattic/cli.js --port 5000 --folder ./dist --cors",
     "deploy": "cd ./dist && gcloud app deploy app.yaml"
   }
 }
