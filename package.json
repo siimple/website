@@ -6,13 +6,11 @@
   "author": "Josemi Juanes <josemijuanes@gmail.com>",
   "license": "MIT",
   "homepage": "http://siimple.juanes.xyz/",
-  "repository":
-  {
+  "repository": {
     "type": "git",
     "url": "git://github.com/siimple/website.git"
   },
-  "devDependencies":
-  {
+  "devDependencies": {
     "rmr": "0.0.4",
     "gulp": "3.9.1",
     "gulp-rename": "1.2.2",
@@ -20,8 +18,7 @@
     "gulp-sass": "^3.1.0",
     "stattic": "^0.2.3"
   },
-  "scripts":
-  {
+  "scripts": {
     "dev": "node ./node_modules/stattic/cli.js --port 5000 --folder ./dist --cors",
     "deploy": "cd ./dist && gcloud app deploy app.yaml"
   }
