@@ -33,7 +33,7 @@ gulp.task('build:html', function()
 gulp.task('build:css', function()
 {
   //Get the scss files
-  gulp.src('./src/_scss/**.scss')
+  gulp.src('./src/scss/**.scss')
 
   //Build the scss files
   .pipe(sass({ includePaths: [ 'bower_components', 'node_modules' ] }).on('error', sass.logError))
