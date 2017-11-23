@@ -20,10 +20,10 @@ gulp.task('build', ['build:html', 'build:css', 'build:copy']);
 gulp.task('build:html', function()
 {
   //Get the source files
-  gulp.src(['./src/**/*.html', '!./src/_templates/**.html'])
+  gulp.src('./src/**/*.html')
 
   //Build the page
-  .pipe(nunjucks({ path: './src/_templates/', data: {} }))
+  .pipe(nunjucks({ path: './templates/', data: {} }))
 
   //Output path
   .pipe(gulp.dest('./dist/'));
