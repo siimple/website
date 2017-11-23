@@ -49,13 +49,10 @@ gulp.task('build:copy', function()
   gulp.src(['./app.yaml']).pipe(gulp.dest('./dist/'));
 
   //Copy the javascript files
-  gulp.src('./src/js/*.js').pipe(gulp.dest('./dist/js'));
+  //gulp.src('./src/js/*.js').pipe(gulp.dest('./dist/js'));
 
   //Copy the images folder
   gulp.src('./src/images/**').pipe(gulp.dest('./dist/images'));
-
-  //Copy the css files
-  //gulp.src('./app/css/*.css').pipe(gulp.dest('./dist/css'));
 
   //Copy the siimple modules
   gulp.src('./bower_components/siimple/dist/siimple.css').pipe(gulp.dest('./dist/css'));
