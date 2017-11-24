@@ -2,12 +2,22 @@
 @import "siimple/scss/_all.scss";
 @import "siimple-colors/scss/_all.scss";
 
+//Gradient div
+.gradient
+{
+  background: linear-gradient(135deg, $siimple-teal 0%,$siimple-blue 100%);
+}
+
 //Jumbotron style
 .jumbotron
 {
   padding-top: 150px;
   padding-bottom: 150px;
-  background: linear-gradient(135deg, $siimple-teal 0%,$siimple-blue 100%);
+  background-color: transparent !important;
+  background-image: url('../images/logo.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 500px 500px;
 
   //Jumbotron text
   &-text
