@@ -149,16 +149,20 @@
 <a name="jumbotron"></a>
 <div class="plume-heading2">Jumbotron</div>
 <div class="siimple-paragraph">
-  The <code class="siimple-code">jumbotron</code> is a pretty simple element. The only element it can contain is a title. To create a jumbotron just add the class <code class="siimple-code">siimple-jumbotron</code> to a <code class="siimple-code">div</code>, and then give it a title by putting inside a <code class="siimple-code">div</code> with the class <code class="siimple-code">siimple-jumbotron-title</code>:
+  The <code class="siimple-code">jumbotron</code> is a pretty simple element. It contains up to three elements: a title, a subtitle and a detail (just like the box). To create a jumbotron just add the class <code class="siimple-code">siimple-jumbotron</code> to a <code class="siimple-code">div</code>. As in the box example, you can add the title using the class <code class="siimple-code">siimple-jumbotron-title</code>, the subtitle with <code class="siimple-code">siimple-jumbotron-subtitle</code> and the detail with <code class="siimple-code">siimple-jumbotron-detail</code>:
 </div>
 <div class="documentation-example">
   <div class="siimple-jumbotron" >
     <div class="siimple-jumbotron-title">Welcome page</div>
+    <div class="siimple-jumbotron-subtitle">This is the subtitle</div>
+    <div class="siimple-jumbotron-detail">And this is the detail of the jumbotron element</div>
   </div>
 </div>
 <pre class="documentation-code">
 &lt;div class="siimple-jumbotron"&gt;
   &lt;div class="siimple-jumbotron-title"&gt;Welcome page&lt;/div&gt;
+  &lt;div class="siimple-jumbotron-subtitle"&gt;This is the subtitle&lt;/div&gt;
+  &lt;div class="siimple-jumbotron-detail"&gt;And this is the detail of the jumbotron element&lt;/div&gt;
 &lt;/div&lt;
 </pre>
 <div class="siimple-paragraph">
@@ -167,17 +171,89 @@
 <div class="documentation-example">
   <div class="siimple-jumbotron siimple-jumbotron--orange siimple-jumbotron--fluid">
     <div class="siimple-jumbotron-title">Welcome page</div>
+    <div class="siimple-jumbotron-subtitle">This is the subtitle</div>
+    <div class="siimple-jumbotron-detail">And this is the detail of the jumbotron element</div>
   </div>
 </div>
 <pre class="documentation-code">
   &lt;div class="siimple-jumbotron siimple-jumbotron--orange siimple-jumbotron--fluid"&gt;
     &lt;div class="siimple-jumbotron-title"&gt;Welcome page&lt;/div&gt;
+    &lt;div class="siimple-jumbotron-subtitle"&gt;This is the subtitle&lt;/div&gt;
+    &lt;div class="siimple-jumbotron-detail"&gt;And this is the detail of the jumbotron element&lt;/div&gt;
   &lt;/div&gt;
 </pre>
 
 <!-- Menu section -->
-<!-- <a name="menu"></a>
-<div class="plume-heading2">Menu</div> -->
+<a name="menu"></a>
+<div class="plume-heading2">Menu</div>
+<div class="siimple-paragraph">
+  Creating a <code class="siimple-code">menu</code> with siimple is also quite easy. The first thing to do is to add the <code class="siimple-code">div</code> that will contain it. Create a div and add the class <code class="siimple-code">siimple-menu</code> to it. But wait, if you don't put something inside it, it'll be just an empty box. The <code class="siimple-code">menu</code> element in siimple can be divided in groups, so try to add one now using the class <code class="siimple-code">siimple-menu-group</code>:
+</div>
+<div class="documentation-example">
+  <div class="siimple-menu">
+    <div class="siimple-menu-group">GROUP 1</div>
+  </div>
+</div>
+<pre class="documentation-code">
+  &lt;div class="siimple-menu"&gt;
+    &lt;div class="siimple-menu-group"&gt;GROUP 1&lt;/div&gt;
+  &lt;/div&gt;
+</pre>
+<div class="siimple-paragraph">
+  Now we have to fill the <code class="siimple-code">group</code> with some <code class="siimple-code">items</code>. To do it, simply add as many <code class="siimple-code">links</code> with the class <code class="siimple-code">siimple-menu-item</code> as you want:
+</div>
+<div class="documentation-example">
+  <div class="siimple-menu">
+    <div class="siimple-menu-group">GROUP 1</div>
+    <a class="siimple-menu-item">Link 1</a>
+    <a class="siimple-menu-item">Link 2</a>
+    <a class="siimple-menu-item">Link 3</a>
+  </div>
+</div>
+<pre class="documentation-code">
+&lt;div class="siimple-menu"&gt;
+  &lt;div class="siimple-menu-group"&gt;GROUP 1&lt;/div&gt;
+    &lt;a class="siimple-menu-item"&gt;Item 1&lt;/a&gt;
+    &lt;a class="siimple-menu-item"&gt;Item 2&lt;/a&gt;
+&lt;/div&gt;
+</pre>
+<div class="siimple-tip siimple-tip--yellow siimple-tip--exclamation">
+  Be careful: the items of the element are <b>not contained</b> inside the <code class="siimple-code">group</code>
+</div>
+<div class="siimple-paragraph">
+  There's one more thing to mention about the <code class="siimple-code">menu</code> element: the <code class="siimple-code">subgroups</code>. They are <code class="siimple-code">divs</code> with the class <code class="siimple-code">siimple-menu-sub</code> added that <b>contain</b> the <code class="siimple-code">items</code> that belong to them. This is how the full <code class="siimple-code">menu</code> looks:
+</div>
+<div class="documentation-example">
+    <div class="siimple-menu">
+      <div class="siimple-menu-group">GROUP 1</div>
+      <a class="siimple-menu-item">Item 1</a>
+      <a class="siimple-menu-item">Item 2</a>
+      <div class="siimple-menu-sub">
+        <div class="siimple-menu-item">Item 3</div>
+        <div class="siimple-menu-item">Item 4</div>
+        <div class="siimple-menu-sub">
+          <div class="siimple-menu-item">Item 5</div>
+        </div>
+      </div>
+    </div>
+</div>
+<pre class="documentation-code">
+&lt;div class="siimple-menu"&gt;
+  &lt;div class="siimple-menu-group"&gt;GROUP 1&lt;/div&gt;
+  &lt;a class="siimple-menu-item"&gt;Item 1&lt;/a&gt;
+  &lt;a class="siimple-menu-item"&gt;Item 2&lt;/a&gt;
+  &lt;div class="siimple-menu-sub"&gt;
+    &lt;div class="siimple-menu-item"&gt;Item 3&lt;/div&gt;
+    &lt;div class="siimple-menu-item"&gt;Item 4&lt;/div&gt;
+    &lt;div class="siimple-menu-sub"&gt;
+      &lt;div class="siimple-menu-item"&gt;Item 5&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+<div class="siimple-tip siimple-tip--red siimple-tip--heart">
+  In the case of the subgroups, the items that belong to them <b>are actually contained</b> inside them
+</div>
 
 <!-- Navbar section -->
 <a name="navbar"></a>
@@ -246,7 +322,6 @@
 &lt;/div&gt;
 </pre>
 
-<!-- ANTES DE CONTINUAR RECUERDA LA CLASE MENU -->
 <!-- Tab section -->
 
 
