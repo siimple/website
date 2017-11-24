@@ -323,7 +323,42 @@
 </pre>
 
 <!-- Tab section -->
-
+<a name="tab"></a>
+<div class="plume-heading2">Tab</div>
+<div class="siimple-paragraph">
+  <code class="siimple-code">Tabs</code> are a great way to separate the info contained in your <code class="siimple-code">content</code> section. To create them, first you have to create the <code class="siimple-code">tabs</code> container. Just put a <code class="siimple-code">div</code> with the class <code class="siimple-code">siimple-tabs</code> to get started. Then, add a <code class="siimple-code">tab</code>: they're just <code class="siimple-code">divs</code> where you use the class <code class="siimple-code">siimple-tabs-tab</code>:
+</div>
+<div class="documentation-example">
+  <div class="siimple-tabs">
+    <div class="siimple-tabs-tab">Tab 1</div>
+    <div class="siimple-tabs-tab">Tab 2</div>
+    <div class="siimple-tabs-tab">Tab 3</div>
+  </div>
+</div>
+<pre class="documentation-code">
+&lt;div class="siimple-tabs"&gt;
+  &lt;div class="siimple-tabs-tab"&gt;Tab 1&lt;/div&gt;
+  &lt;div class="siimple-tabs-tab"&gt;Tab 2&lt;/div&gt;
+  &lt;div class="siimple-tabs-tab"&gt;Tab 3&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+<div class="siimple-paragraph">
+  There are a couple more things you can use with your <code class="siimple-code">tabs</code>. The first one is the class <code class="siimple-code">siimple-tabs-tab--selected</code>, which you add to the <code class="siimple-code">tab</code> you want to be selected (the current one that the user will be at). The second one is the class <code class="siimple-code">siimple-tabs--boxed</code>: apply it to the <code class="siimple-code">siimple-tabs</code> <code class="siimple-code">div</code> to have rounded corners when hovering over the <code class="siimple-code">tabs</code>:
+</div>
+<div class="documentation-example">
+  <div class="siimple-tabs siimple-tabs--boxed">
+    <div class="siimple-tabs-tab">Tab 1</div>
+    <div class="siimple-tabs-tab siimple-tabs-tab--selected">Tab 2</div>
+    <div class="siimple-tabs-tab">Tab 3</div>
+  </div>
+</div>
+<pre class="documentation-code">
+  &lt;div class="siimple-tabs siimple-tabs--boxed"&gt;
+    &lt;div class="siimple-tabs-tab"&gt;Tab 1&lt;/div&gt;
+    &lt;div class="siimple-tabs-tab siimple-tabs-tab--selected"&gt;Tab 2&lt;/div&gt;
+    &lt;div class="siimple-tabs-tab"&gt;Tab 3&lt;/div&gt;
+  &lt;/div&gt;
+</pre>
 
 {% endblock %}
 
