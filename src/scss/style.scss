@@ -29,6 +29,29 @@ body
 //Footer styles
 .footer
 {
+  padding-top: 35px !important;
+
+  //Footer logo
+  &-logo
+  {
+    display: block;
+    width: 60px;
+    height: 60px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 10px;
+    background-image: url('../images/logo-footer.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 60px 60px;
+    opacity: 0.5;
+    transition: opacity 0.3s;
+    cursor: pointer;
+
+    //Logo hover
+    &:hover { opacity: 1.0; }
+  }
+
   //Footer heart
   &-heart::after
   {
