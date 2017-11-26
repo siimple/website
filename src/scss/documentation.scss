@@ -23,20 +23,6 @@ $documentation-example-padding: 10px;
     background-size: 250px 250px;
     background-position: center;
   }
-  //Colors block
-  &-colors
-  {
-    display: inline-block;
-    width: 130px;
-    border-radius: 5px;
-    font-size: 14px;
-    font-weight: bold;
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    margin-bottom: 10px;
-    margin-left: 10px;
-  }
 
   //Documentation example
   &-example
@@ -73,6 +59,28 @@ $documentation-example-padding: 10px;
       display: block;
       border-top: 1px solid $siimple-grey-2;
       margin-bottom: 25px;
+    }
+  }
+
+  //Core documentation styles
+  &-core
+  {
+    //Core logo
+    &-logo { background-image: url('../images/siimple-logo.png'); }
+
+    //Colors blocks
+    &-colors
+    {
+      display: inline-block;
+      width: 130px;
+      border-radius: 5px;
+      font-size: 14px;
+      font-weight: bold;
+      text-align: center;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      margin-bottom: 10px;
+      margin-left: 10px;
     }
   }
 }
