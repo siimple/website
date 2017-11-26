@@ -146,13 +146,12 @@
   &-header
   {
     display: block;
-    color: $siimple-white;
-    height: 45px;
-    line-height: 45px;
-    font-size: 20px;
-    font-weight: bold;
+    height: 90px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 300px;
   }
 
   //Project box content
@@ -163,5 +162,14 @@
     background-color: $siimple-white;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
+  }
+
+  //Project title
+  &-title
+  {
+    line-height: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
   }
 }
