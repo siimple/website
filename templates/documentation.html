@@ -2,6 +2,7 @@
 
 {% block content %}
 <link rel="stylesheet" type="text/css" href="/css/documentation.css">
+{% block documentation_styles %}{% endblock %}
 <div class="plume plume--js">
   <div class="plume-sidebar">
     <div class="plume-menu">
@@ -21,8 +22,8 @@
     Found a mistake or want to help improve this documentation?
     <a href="https://github.com/siimple/website" target="_blank" class="siimple-link">Suggest changes on GitHub</a>
   </div>
-  <div class="plume-footer" align="center">
-    <a href="/" class="footer-logo"></a>
+  <div class="plume-footer documentation-footer" align="center">
+    {% block documentation_footer %}{% endblock %}
   </div>
 </div>
 {% endblock %}
