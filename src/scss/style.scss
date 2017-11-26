@@ -31,16 +31,20 @@ body
 {
   padding-top: 35px !important;
 
+  //Footer logos box
+  &-logos
+  {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
   //Footer logo
   &-logo
   {
-    display: block;
+    display: inline-block;
     width: 60px;
     height: 60px;
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 10px;
-    background-image: url('../images/logo-footer.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: 60px 60px;
@@ -64,4 +68,14 @@ body
   {
 
   }
+}
+
+//Logos paths
+.logo
+{
+  //Core logo
+  &-core { background-image: url('../images/siimple-logo.png'); }
+
+  //Colors logo
+  &-colors { background-image: url('../images/siimple-colors-logo.png'); }
 }
