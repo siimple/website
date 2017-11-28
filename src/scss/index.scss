@@ -128,51 +128,51 @@
     color: $siimple-navy-4;
     margin-bottom: 60px;
   }
-}
 
-//Project box
-.project
-{
-  display: inline-block;
-  width: 300px;
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-bottom: 20px;
-  border-radius: 5px;
-  text-decoration: none;
-  vertical-align: top;
-
-  //Project box header
-  &-header
+  //Project item
+  &-item
   {
-    display: block;
-    height: 90px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 300px;
+    display: inline-block;
+    width: 300px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    vertical-align: top;
 
-    //Siimple colors background image
-    &--siimple-colors { background-image: url('/images/siimple-colors-header.png'); }
-  }
+    //Project header
+    &-header
+    {
+      display: block;
+      height: 90px;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 300px;
 
-  //Project box content
-  &-content
-  {
-    display: block;
-    padding: 15px;
-    background-color: $siimple-white;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-  }
+      //Siimple colors background image
+      &--siimple-colors { background-image: url('/images/siimple-colors-header.png'); }
+    }
 
-  //Project title
-  &-title
-  {
-    line-height: 20px;
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 10px;
+    //Project content
+    &-content
+    {
+      display: block;
+      padding: 15px;
+      background-color: $siimple-white;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
+
+    //Project title
+    &-title
+    {
+      line-height: 20px;
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
   }
 }
