@@ -51,15 +51,16 @@
 <div class="siimple-content siimple--large projects" align="center">
   <div class="projects-title">Projects</div>
   <div class="projects-detail">Section detail</div>
+  {% for project in projects %}
   <div class="projects-item">
-    <div class="projects-item-header projects-item-header--siimple-colors"></div>
+    <div class="projects-item-header projects-item-header--{{ project.id }}"></div>
     <div class="projects-item-content">
-      <div class="projects-item-title siimple-color--pink">siimple-colors</div>
-      <div class="siimple-paragraph">
-        An elegant and minimalistic color palette for UI design.
-      </div>
-      <a href="/colors/" class="siimple-btn siimple-btn--pink">Get started</a>
+      <div class="projects-item-title siimple-color--{{ project.color }}">{{ project.name }}</div>
+      <div class="siimple-paragraph">{{ project.description }}</div>
+      <a href="{{ project.url }}" class="siimple-btn siimple-btn--{{ project.color }}">Get started</a>
+      <div class="projects-item-version">Latest v{{ project.version }}</div>
     </div>
   </div>
+  {% endfor %}
 </div>
 {% endblock %}
