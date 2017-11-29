@@ -152,6 +152,9 @@
       background-repeat: no-repeat;
       background-size: 300px;
 
+      //Siimple core background image
+      &--siimple-core { background-image: url('/images/siimple-header.png'); }
+
       //Siimple colors background image
       &--siimple-colors { background-image: url('/images/siimple-colors-header.png'); }
     }
@@ -173,6 +176,18 @@
       font-size: 20px;
       font-weight: bold;
       margin-bottom: 10px;
+    }
+
+    //Project version
+    &-version
+    {
+      display: block;
+      height: 20px;
+      line-height: 20px;
+      font-size: 13px;
+      color: $siimple-navy-4;
+      font-weight: bold;
+      margin-top: 5px;
     }
   }
 }
