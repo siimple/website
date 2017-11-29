@@ -61,23 +61,4 @@ $documentation-example-padding: 10px;
       margin-bottom: 25px;
     }
   }
-
-  //Core documentation styles
-  &-core
-  {
-    //Colors blocks
-    &-colors
-    {
-      display: inline-block;
-      width: 130px;
-      border-radius: 5px;
-      font-size: 14px;
-      font-weight: bold;
-      text-align: center;
-      padding-top: 20px;
-      padding-bottom: 20px;
-      margin-bottom: 10px;
-      margin-left: 10px;
-    }
-  }
 }
