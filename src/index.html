@@ -53,7 +53,7 @@
   <div class="projects-detail">Section detail</div>
   {% for project in projects %}
   <div class="projects-item">
-    <div class="projects-item-header projects-item-header--{{ project.id }}"></div>
+    <div class="projects-item-header header--{{ project.name }}"></div>
     <div class="projects-item-content">
       <div class="projects-item-title siimple-color--{{ project.color }}">{{ project.name }}</div>
       <div class="siimple-paragraph">{{ project.description }}</div>
