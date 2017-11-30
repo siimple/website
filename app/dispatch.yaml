@@ -1,0 +1,3 @@
+dispatch:
+  - url: "colors.siimple.xyz/*"
+    service: colors
