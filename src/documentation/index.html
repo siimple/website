@@ -23,7 +23,7 @@
 <div class="plume-header" align="center">
   <div class="documentation-logo logo-core"></div>
   <div class="plume-header-title">siimple</div>
-  <div class="plume-header-subtitle">v3.0.0</div>
+  <div class="plume-header-subtitle">v{{ projects[0].version }}</div>
 </div>
 {% endblock %}
 
@@ -33,7 +33,7 @@
 <div class="plume-heading1">Getting started</div>
 <p class="siimple-p">
   <b>siimple</b> is a light, responsive and open source framework for design flat and clean websites.
-  It has built in SASS/SCSS and provides a clean starting point for your web design.
+  It has been built in SASS/SCSS and provides a clean starting point for your web design.
 </p>
 
 <!-- Installation block -->
@@ -62,7 +62,7 @@
 <p class="siimple-p">
   You can use our hosted version in <b>JsDelivr</b>. Just copy and paste the following <code class="siimple-code">&lt;link&gt;</code> element in your HTML file:
 </p>
-<pre class="siimple-pre">&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/siimple@3.0.0/dist/siimple.min.css"&gt;</pre>
+<pre class="siimple-pre">&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/siimple@{{ projects[0].version }}/dist/siimple.min.css"&gt;</pre>
 <p class="siimple-p">
   You can check all available hosted versions <a href="https://www.jsdelivr.com/package/npm/siimple" class="siimple-a" target="_blank">in the jsDelivr website</a>.
 </p>
@@ -143,17 +143,32 @@ body
 <div class="siimple-p">
   <b>siimple</b> comes with 10 colors predefined:
 </div>
+<style>
+  .colors
+  {
+    display: inline-block;
+    width: 130px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+  }
+</style>
 <div>
-  <div class="documentation-core-colors siimple-color--white siimple-bg--navy">Navy</div>
-  <div class="documentation-core-colors siimple-color--white siimple-bg--green">Green</div>
-  <div class="documentation-core-colors siimple-color--white siimple-bg--teal">Teal</div>
-  <div class="documentation-core-colors siimple-color--white siimple-bg--blue">Blue</div>
-  <div class="documentation-core-colors siimple-color--white siimple-bg--purple">Purple</div>
-  <div class="documentation-core-colors siimple-color--white siimple-bg--pink">Pink</div>
-  <div class="documentation-core-colors siimple-color--white siimple-bg--red">Red</div>
-  <div class="documentation-core-colors siimple-color--white siimple-bg--orange">Orange</div>
-  <div class="documentation-core-colors siimple-color--white siimple-bg--yellow">Yellow</div>
-  <div class="documentation-core-colors siimple-color--navy siimple-bg--grey">Grey</div>
+  <div class="colors siimple-color--white siimple-bg--navy">Navy</div>
+  <div class="colors siimple-color--white siimple-bg--green">Green</div>
+  <div class="colors siimple-color--white siimple-bg--teal">Teal</div>
+  <div class="colors siimple-color--white siimple-bg--blue">Blue</div>
+  <div class="colors siimple-color--white siimple-bg--purple">Purple</div>
+  <div class="colors siimple-color--white siimple-bg--pink">Pink</div>
+  <div class="colors siimple-color--white siimple-bg--red">Red</div>
+  <div class="colors siimple-color--white siimple-bg--orange">Orange</div>
+  <div class="colors siimple-color--white siimple-bg--yellow">Yellow</div>
+  <div class="colors siimple-color--navy siimple-bg--grey">Grey</div>
 </div>
 
 
