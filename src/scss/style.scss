@@ -74,8 +74,18 @@ body
 .logo
 {
   //Core logo
-  &-core { background-image: url('../images/siimple-logo.png'); }
+  &--siimple { background-image: url('../images/siimple/logo.png'); }
 
   //Colors logo
-  &-colors { background-image: url('../images/siimple-colors-logo.png'); }
+  &--siimple-colors { background-image: url('../images/siimple-colors/logo.png'); }
+}
+
+//Headers paths
+.header
+{
+  //Siimple background image
+  &--siimple { background-image: url('../images/siimple/header.png'); }
+
+  //Siimple colors background image
+  &--siimple-colors { background-image: url('../images/siimple-colors/header.png'); }
 }
