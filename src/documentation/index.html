@@ -27,6 +27,24 @@
 </div>
 {% endblock %}
 
+{% block documentation_styles %}
+<style>
+  .colors
+  {
+    display: inline-block;
+    width: 130px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+  }
+</style>
+{% endblock %}
+
 {% block documentation_content %}
 
 <!-- Getting started block -->
@@ -143,21 +161,6 @@ body
 <div class="siimple-p">
   <b>siimple</b> comes with 10 colors predefined:
 </div>
-<style>
-  .colors
-  {
-    display: inline-block;
-    width: 130px;
-    border-radius: 5px;
-    font-size: 14px;
-    font-weight: bold;
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    margin-bottom: 10px;
-    margin-left: 10px;
-  }
-</style>
 <div>
   <div class="colors siimple-color--white siimple-bg--navy">Navy</div>
   <div class="colors siimple-color--white siimple-bg--green">Green</div>
