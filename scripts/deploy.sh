@@ -4,4 +4,4 @@
 cd ./dist
 
 # Deploy the app
-gcloud app deploy app.yaml dispatch.yaml --project siimple-documentation
+gcloud app deploy app.yaml --project siimple-documentation
