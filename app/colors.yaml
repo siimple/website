@@ -1,0 +1,18 @@
+runtime: python27
+api_version: 1
+threadsafe: yes
+service: colors
+
+handlers:
+
+- url: /
+  mime_type: text/html
+  static_files: colors/index.html
+  upload: colors/index.html
+  secure: always
+
+- url: /(.+).html
+  mime_type: text/html
+  static_files: colors/\1.html
+  upload: colors/(.+)
+  secure: always
