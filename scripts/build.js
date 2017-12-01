@@ -52,7 +52,7 @@ var buildCSS = function()
 var Copy = function()
 {
   //Copy the yaml files
-  gulp.src(['./app/**.yaml']).pipe(gulp.dest(dest.base));
+  gulp.src(['./**.yaml']).pipe(gulp.dest(dest.base));
 
   //Copy the javascript files
   //gulp.src('./src/js/*.js').pipe(gulp.dest(dest.js));
