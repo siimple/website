@@ -17,7 +17,8 @@
     "gulp-nunjucks-render": "2.2.1",
     "gulp-sass": "^3.1.0",
     "stattic": "^0.2.3",
-    "keue": "^0.1.0"
+    "keue": "^0.1.0",
+    "utily": "^0.2.4"
   },
   "scripts": {
     "build": "node ./scripts/build.js",
