@@ -1,32 +1,12 @@
-# Siimple website
+# siimple.xyz
 
-[![dependencies Status](https://david-dm.org/siimple/website/status.svg)](https://david-dm.org/siimple/website)
+This repository contains the source code powering [www.siimple.xyz](https://www.siimple.xyz).
 
-This repository contains the code that runs the website of Siimple.
+## Getting started
 
-## Install
-
-Run **npm** to install all develop dependencies:
-
-```
-npm install
-```
-
-Then, run **bower** to download the frontend dependencies:
-
-```
-bower install
-```
-
-## Run
-
-The first time you must run [gulp](http://gulpjs.com) to build the website:
-
-```
-gulp
-```
-
+> Under development
 
 ## License
 
-Copyright 2016 Josemi Juanes. Under the [MIT LICENSE](./LICENSE).
+Copyright 2016-present Josemi Juanes. Under the [MIT LICENSE](./LICENSE).
+
