@@ -1,0 +1,5 @@
+# Build configuration
+env: "production"
+exclude: ["README.md","app.yaml"]
+
+
