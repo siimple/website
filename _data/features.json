@@ -2,16 +2,16 @@
     "modular": {
         "title": "Modular",
         "image": "./assets/images/features-modular.png",
-        "description": "<strong>siimple</strong> has been built using SASS/SCSS mixins. Just import only what you need!"
+        "description": "<strong>siimple</strong> has been built using SASS/SCSS. Just import only what you need!"
     },
     "responsive": {
         "title": "Responsive",
-        "icon": "./assets/images/features-responsive.png",
+        "image": "./assets/images/features-responsive.png",
         "description": "<strong>siimple</strong> allows you to design a web page that looks great on all devices (desktops, tablets and phones)."
     },
     "elegant": {
         "title": "Elegant",
-        "icon": "./assets/images/features-elegant.png",
+        "image": "./assets/images/features-elegant.png",
         "description": "<strong>siimple</strong> combines an elegant, modern, flat and minimalistic design."
     },
     "all": ["modular", "responsive", "elegant"]
