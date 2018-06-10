@@ -1,68 +1,29 @@
-{% extends "page.html" %}
+---
+layout: "default"
+title: ""
+---
 
-{% block header %}
-<title>siimple</title>
-<link rel="stylesheet" type="text/css" href="/css/index.css">
-{% endblock %}
-
-{% block page_content %}
-<!-- Jumbotron -->
 <div class="gradient">
-  <div class="siimple-jumbotron siimple-jumbotron--blue jumbotron">
-    <div class="siimple-layout--large" align="center">
-      <div class="siimple-jumbotron-title jumbotron-text">3.0.0</div>
-      <div class="siimple-jumbotron-title">flat. minimal. siimple.</div>
+    <div class="siimple-jumbotron siimple-jumbotron--blue jumbotron">
+        <div class="siimple-layout--large" align="center">
+            <div class="siimple-jumbotron-title jumbotron-text">3.0.0</div>
+            <div class="siimple-jumbotron-title">flat. minimal. siimple.</div>
+        </div>
     </div>
-  </div>
 </div>
-
-<!-- Description -->
-<div class="siimple-content siimple-content--large features" align="center">
-  <div class="siimple-grid">
+<div class="siimple-content siimple-content--large sw-features" align="center">
+    <div class="sw-features-title">Why <strong>siimple</strong>?</div>
     <div class="siimple-grid-row">
-      <div class="siimple-grid-col siimple-grid-col--4 siimple-grid-col-sm--12 features-col">
-        <img class="features-icon" src="/images/features-modular.png">
-        <div class="features-title">Modular</div>
-        <div class="features-detail">
-          <b>siimple</b> has been built using <b>SASS/SCSS mixins</b>. Just import only what you need!
+        {% for feature_id in site.data.features.all %}
+        {% assign feature = site.data.features[feature_id] %} 
+        <div class="siimple-grid-col siimple-grid-col--4 siimple-grid-col-sm--12 sw-features-item">
+            <img class="sw-features-item-image" src="{{ feature.image }}">
+            <div class="sw-features-item-title">{{ feature.title }}</div>
+            <div class="sw-features-description">{{ feature.description }}</div>
         </div>
-      </div>
-      <div class="siimple-grid-col siimple-grid-col--4 siimple-grid-col-sm--12 features-col">
-        <img class="features-icon" src="/images/features-responsive.png">
-        <div class="features-title">Responsive</div>
-        <div class="features-detail">
-          <b>siimple</b> allows you to design a web page that looks great on all devices (desktops, tablets and phones).
-        </div>
-      </div>
-      <div class="siimple-grid-col siimple-grid-col--4 siimple-grid-col-sm--12 features-col">
-        <img class="features-icon" src="/images/features-elegant.png">
-        <div class="features-title">Elegant</div>
-        <div class="features-detail">
-          <b>siimple</b> combines an elegant, modern, flat and minimalistic design.
-        </div>
-      </div>
+        {% endfor %}
     </div>
-  </div>
-  <div class="features-get-started">Get started now!</div>
-  <a href="./documentation" class="features-btn">Read the documentation</a>
+    <div class="sw-features-subtitle">Get started now!</div>
+    <a href="{{ site.documentation_url }}" class="sw-features-btn">Read the documentation</a>
 </div>
 
-<!-- Projects list -->
-<div class="siimple-content siimple-content--large projects" align="center">
-  <div class="projects-title">Packages</div>
-  <div class="projects-detail">
-    The <b>siimple</b> framework is grouped into the following packages, that are distributed using NPM and can be imported independently in your project.
-  </div>
-  {% for project in projects %}
-  <div class="projects-item">
-    <div class="projects-item-header header--{{ project.name }}"></div>
-    <div class="projects-item-content">
-      <div class="projects-item-title siimple-color--{{ project.color }}">{{ project.name }}</div>
-      <div class="siimple-paragraph">{{ project.description }}</div>
-      <a href="{{ project.url }}" class="siimple-btn siimple-btn--{{ project.color }}">Get started</a>
-      <div class="projects-item-version">Latest v{{ project.version }}</div>
-    </div>
-  </div>
-  {% endfor %}
-</div>
-{% endblock %}
