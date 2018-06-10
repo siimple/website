@@ -1,0 +1,41 @@
+//Contribute class
+.sw-contribute {
+    display: block;
+    background-color: $siimple-blue-dark;
+    color: $siimple-white;
+    padding-top: 90px;
+    padding-bottom: 80px;
+    //Contribute title
+    &-title {
+        display: block;
+        font-size: 35px;
+        color: $siimple-white;
+        margin-bottom: 15px;
+    }
+    //Description
+    &-description {
+        display: block;
+        font-size: 22px;
+        color: $siimple-blue-extra-light;
+        line-height: 30px;
+        margin-bottom: 25px;
+    }
+    //Contribute button
+    &-btn {
+        display: inline-block;
+        font-size: 20px;
+        text-decoration: none;
+        color: $siimple-blue-dark;
+        background-color: $siimple-white;
+        border-radius: 5px;
+        padding: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+        transition: all 0.3s;
+        &:hover {
+            cursor: pointer;
+            opacity: 0.7;
+        }
+    }
+}
+
