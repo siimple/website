@@ -42,3 +42,5 @@ dist/
 
 # IntelliJ project files
 *.iml
+*.swp
+
