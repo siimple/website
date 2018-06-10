@@ -1,11 +1,9 @@
 {
-  "name": "siimple-website",
-  "description": "The code that runs the siimple project website",
-  "private": true,
-  "dependencies":
-  {
-    "siimple": "siimple/siimple#master",
-    "siimple-colors": "siimple/siimple-colors#master",
-    "plume": "siimple/plume#master"
-  }
+    "name": "siimple-website",
+    "private": true,
+    "dependencies": {
+        "siimple": "siimple/siimple#develop",
+        "siimple-colors": "siimple/siimple-colors#develop"
+    }
 }
+
