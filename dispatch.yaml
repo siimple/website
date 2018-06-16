@@ -1,3 +1,4 @@
 dispatch:
-  - url: "colors.siimple.xyz/*"
-    service: colors
+- url: "docs.siimple.xyz/*"
+  service: docs
+
