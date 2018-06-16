@@ -1,18 +1,18 @@
-//Intro class
-.sw-intro {
+//Welcome class
+.sw-welcome {
     display: block;
     background: linear-gradient(135deg, $siimple-mint-dark 0%,$siimple-blue-dark 100%);
     color: $siimple-white;
-    //Intro jumbotron
+    //Welcome jumbotron
     &-jumbotron {
         padding-top: 10px !important;
         padding-bottom: 10px !important;
     }
-    //Intro container
+    //Welcome container
     &-container {
         overflow: hidden;
         background-color: transparent !important;
-        background-image: url('./logo-animated.svg');
+        background-image: url('./logo.png');
         background-repeat: no-repeat;
         background-position: center right;
         background-size: 450px 450px;
@@ -20,7 +20,7 @@
         padding-bottom: 60px;
         //opacity: 0.6;
     }
-    //Intro title
+    //Welcome title
     &-title {
         font-size: 70px;
         line-height: 90px;
