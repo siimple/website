@@ -9,10 +9,10 @@ build:
 	@logger -s "Build started"
 	@logger -s "Building website with Jekyll"
 	jekyll build
+	@logger -s "Copying assets"
+	cp -r ./assets ./_site/assets
 	@logger -s "Building website styles"
 	${NODE_BIN}/sass --load-path="./bower_components/" ./siimple-website.scss ./_site/assets/siimple-website.css
-	@logger -s "Copying assets"
-	mkdir -p ./_site/assets
 	@logger -s "Build finished"
 
 # Publish the website
