@@ -22,6 +22,12 @@
         </div>
         <div class="sw-footer-item siimple-grid-col siimple-grid-col--sm-12 siimple-grid-col--4">
             <div class="sw-footer-item-title">Resources</div>
+            {% for link_id in site.footer_links %}
+            {% assign link = site.data.links[link_id] %}
+            <a href="{{ page.root }}{{ link.url }}" class="sw-footer-item-link">
+                <div class="sw.footer-item-link-title">{{ link.name }}</div>
+            </a>
+            {% endfor %}
         </div>
     </div>
     <div class="sw-footer-legal">
