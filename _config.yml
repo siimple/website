@@ -16,6 +16,7 @@ navbar_social: ['twitter']
 # Footer configuration
 footer_projects: ["siimple", "siimple-colors"]
 footer_social: ["twitter", "gitter"]
+footer_links: ["privacy"]
 
 # Urls
 documentation_url: "https://docs.siimple.xyz"
