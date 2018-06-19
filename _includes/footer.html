@@ -1,0 +1,31 @@
+<div class="siimple-footer siimple-footer--large sw-footer">
+    <div class="siimple-grid siimple-grid-row">
+        <div class="sw-footer-item siimple-grid-col siimple-grid-col--sm-12 siimple-grid-col--4">
+            <div class="sw-footer-item-title">Main projects</div>
+            {% for project_id in site.footer_projects %}
+            {% assign project = site.data.projects[project_id] %}
+            <a href="{{ project.url }}" class="sw-footer-item-link">
+                <div class="sw-footer-item-link-title">{{ project.name }}</div>
+                <div class="sw-footer-item-link-description">{{ project.description }}</div>
+            </a>
+            {% endfor %}
+        </div>
+        <div class="sw-footer-item siimple-grid-col siimple-grid-col--sm-12 siimple-grid-col--4">
+            <div class="sw-footer-item-title">Community</div>
+            {% for social_id in site.footer_social %}
+            {% assign social = site.data.social[social_id] %}
+            <a href="{{ social.url }}" class="sw-footer-item-link" target="_blank">
+                <div class="sw-footer-item-link-title">{{ social.name }}</div>
+                <div class="sw-footer-item-link-description">{{ social.description }}</div>
+            </a>
+            {% endfor %}
+        </div>
+        <div class="sw-footer-item siimple-grid-col siimple-grid-col--sm-12 siimple-grid-col--4">
+            <div class="sw-footer-item-title">Resources</div>
+        </div>
+    </div>
+    <div class="sw-footer-legal">
+        &copy; 2015-2018 <strong>siimple</strong>
+    </div>
+</div>
+
