@@ -5,7 +5,7 @@
     <div class="siimple--float-right siimple--d-sm-none">
         {% for social_id in site.navbar_social %}
         {% assign social = site.data.social[social_id] %}
-        <a href="{{ social.url }}" class="sw-navbar-social" target="_blank" style="background-image:url('./{{ social.image }}');"></a>
+        <a href="{{ social.url }}" class="sw-navbar-social" target="_blank" style="background-image:url('{{ page.root }}{{ social.image }}');"></a>
         {% endfor %}
     </div>
 </div>
