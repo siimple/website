@@ -3,6 +3,13 @@
 # Binaries paths
 # NODE_BIN=./node_modules/.bin
 
+# Innitial installation
+setup:
+	@set -e
+	@logger -s "Setup started"
+	rm -rf bower_components && bower install
+	@logger -s "Setup finished"
+
 # Build the website
 build:
 	@set -e
