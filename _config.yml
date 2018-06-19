@@ -1,5 +1,24 @@
 # Build configuration
 env: "production"
-exclude: ["README.md","app.yaml"]
+exclude: ["README.md","app.yaml","bower_components/","node_modules/"]
+sass:
+    load_paths:
+        - _sass
+        - bower_components
+
+# Website configuration
+title: "siimple"
+
+# Navbar configuration
+navbar_title: "siimple"
+navbar_social: ['twitter']
+
+# Footer configuration
+footer_projects: ["siimple", "siimple-colors"]
+footer_social: ["twitter", "gitter"]
+
+# Urls
+documentation_url: "https://docs.siimple.xyz"
+contribute_url: "https://github.com/siimple/siimple/blob/develop/.github/CONTRIBUTING.md"
 
 
