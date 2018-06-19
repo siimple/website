@@ -3,14 +3,13 @@
 ---
 
 //Import dependencies
-//@import "siimple/scss/_variables.scss";
-@import "siimple/scss/siimple.scss";
+@import "siimple/scss/_variables.scss";
 @import "siimple-colors/scss/_all.scss";
 
 //Import partials
-@import "./_sass/contribute.scss";
-@import "./_sass/features.scss";
-@import "./_sass/footer.scss";
-@import "./_sass/navbar.scss";
-@import "./_sass/welcome.scss";
+@import "contribute.scss";
+@import "features.scss";
+@import "footer.scss";
+@import "navbar.scss";
+@import "welcome.scss";
 
