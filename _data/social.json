@@ -14,7 +14,7 @@
     "github": {
         "name": "GitHub",
         "description": "Check our projects on GitHub",
-        "image": "assets/images/social/github.com",
+        "image": "assets/images/social/github.png",
         "url": "https://github.com/siimple"
     }
 }
