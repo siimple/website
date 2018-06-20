@@ -1,6 +1,6 @@
 # Build configuration
 env: "production"
-exclude: ["README.md","app.yaml","bower_components/","node_modules/"]
+exclude: ["README.md","LICENSE","app.yaml","dispatch.yaml","bower_components/"]
 sass:
     load_paths:
         - _sass
