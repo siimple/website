@@ -11,11 +11,11 @@ title: "siimple"
 
 # Navbar configuration
 navbar_title: "siimple"
-navbar_social: ['twitter']
+navbar_social: ["twitter", "github"]
 
 # Footer configuration
-footer_projects: ["siimple", "siimple-colors"]
-footer_social: ["twitter", "gitter"]
+footer_projects: ["siimple"]
+footer_social: ["github", "twitter", "gitter"]
 footer_links: ["privacy"]
 
 # Urls
