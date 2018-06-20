@@ -19,6 +19,9 @@
         padding-top: 60px;
         padding-bottom: 60px;
         //opacity: 0.6;
+        @media (max-width: 750px) {
+            background-image:none;
+        }
     }
     //Welcome title
     &-title {
