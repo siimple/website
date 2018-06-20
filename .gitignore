@@ -42,5 +42,8 @@ dist/
 
 # IntelliJ project files
 *.iml
+
+# Cache files and ignores
 *.swp
+.sass-cache
 
