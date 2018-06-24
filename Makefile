@@ -23,12 +23,31 @@ build:
 	@#${NODE_BIN}/sass --load-path="./bower_components/" ./siimple-website.scss ./_site/assets/siimple-website.css
 	@logger -s "Build finished"
 
+# Serve the site
+serve: 
+	@set -e
+	@logger -s "Serve started"
+	make prepublish
+	cd ./.deploy && dev_appserver.py app.yaml
+
+# Prepublish the site
+prepublish: 
+	@set -e
+	@logger -s "Prepublish started"
+	make build
+	@logger -s "Building deployment folder"
+	rm -rf .deploy
+	mkdir -p .deploy
+	cp -r _site .deploy/
+	cp app.yaml .deploy/
+	@logger -s "Prepublish finished"
+
 # Publish the website
 publish: 
 	@set -e
 	@logger -s "Publish started"
-	make build
-	gcloud app deploy app.yaml --project siimple-documentation
+	make prepublish
+	cd ./.deploy && gcloud app deploy app.yaml --project siimple-documentation
 	@logger -s "Publish finished"
 
 # Publish the dispatch file
