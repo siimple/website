@@ -8,5 +8,5 @@ This repository contains the source code powering [www.siimple.xyz](https://www.
 
 ## License
 
-Copyright 2016-present Josemi Juanes. Under the [MIT LICENSE](./LICENSE).
+Copyright 2016-present Josemi Juanes. Code released under the [MIT LICENSE](./LICENSE).
 
