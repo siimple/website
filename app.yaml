@@ -4,45 +4,23 @@ threadsafe: yes
 service: default
 
 handlers:
-
-- url: /css
-  static_dir: css
-  secure: always
-
-- url: /js
-  static_dir: js
-  secure: always
-
-- url: /images
-  static_dir: images
-  secure: always
-
 - url: /
-  mime_type: text/html
-  static_files: index.html
-  upload: index.html
+  secure: always
+  static_files: _site/index.html
+  upload: _site/index.html
+- url: /docs
+  secure: always
+  static_files: _site/documentation.html
+  upload: _site/documentation.html
+- url: /documentation
+  secure: always
+  static_files: _site/documentation.html
+  upload: _site/documentation.html
+- url: /documentation/.*
+  secure: always
+  static_files: _site/documentation.html
+  upload: _site/documentation.html
+- url: /
+  static_dir: _site
   secure: always
 
-- url: /(.+)/
-  mime_type: text/html
-  static_files: \1/index.html
-  upload: (.+)/index.html
-  secure: always
-
-- url: /(.+)/(.+)
-  mime_type: text/html
-  static_files: \1/\2
-  upload: (.*)/(.*)
-  secure: always
-
-- url: /(.+).html
-  mime_type: text/html
-  static_files: \1.html
-  upload: (.+)
-  secure: always
-
-- url: /(.+)
-  mime_type: text/html
-  static_files: \1/index.html
-  upload: (.+)/index.html
-  secure: always
