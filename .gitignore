@@ -37,13 +37,14 @@ bower_components
 # Optional REPL history
 .node_repl_history
 
-# Generated website
-dist/
-
-# IntelliJ project files
-*.iml
+# Folders
+_site
+.sass-cache
+.deploy
+.idea
 
 # Cache files and ignores
+*.iml
 *.swp
 .sass-cache
 
