@@ -4,9 +4,10 @@ title: "Privacy policy"
 root: "../"
 ---
 
+{% assign section_image = "privacy" %}
 {% assign section_title = "Privacy Policy" %}
 {% assign section_description = "Spoiler: <strong>we do not collect and store information about you</strong>." %}
-{% include section.html title=section_title description=section_description %}
+{% include section.html image=section_image title=section_title description=section_description %}
 
 <div class="siimple-content sw-content siimple-content--large">
     <div class="siimple-h5">Really?</div>
@@ -25,7 +26,7 @@ root: "../"
     </div>
     <div class="siimple-h5">Changes to our Privacy Policy</div>
     <div class="siimple-paragraph">
-        Although most changes are likely to be minor, we may change our Privacy Policy from time to time. We encourage visitors to check this Privacy Policy frequently.
+        Although most changes are likely to be minor, we may change our Privacy Policy from time to time. We encourage visitors to check this Privacy Policy frequently. Questions, comments and requests regarding this Privacy Policy are always welcome and should be addressed to <a href="mailto:{{ site.privacy_email }}" target="_blank" class="siimple-link">{{ site.privacy_email }}</a>.
     </div>
     <div class="siimple-paragraph">
         This Privacy Policy was updated on <strong>2018/06/27</strong>.
