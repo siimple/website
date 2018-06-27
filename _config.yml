@@ -22,4 +22,7 @@ footer_links: ["privacy"]
 documentation_url: "https://docs.siimple.xyz"
 contribute_url: "https://github.com/siimple/siimple/blob/develop/.github/CONTRIBUTING.md"
 
+# Email contacts
+support_email: "support@siimple.xyz"
+privacy_email: "privacy@siimple.xyz"
 
