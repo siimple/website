@@ -1,12 +1,13 @@
-.PHONY: build publish
+.PHONY: install build publish prepublish
 
 # Binaries paths
 # NODE_BIN=./node_modules/.bin
 
 # Innitial installation
-setup:
+install:
 	@set -e
 	@logger -s "Setup started"
+	bundle install
 	rm -rf bower_components && bower install
 	@logger -s "Setup finished"
 
