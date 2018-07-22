@@ -5,6 +5,12 @@
 //Import theme
 @import "{{ site.theme }}";
 
+//Rewrite some siimple components
+.siimple-table {
+    display: block !important;
+    overflow-x: auto !important;
+}
+
 //Import partials
 @import "content.scss";
 @import "contribute.scss";
