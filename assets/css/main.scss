@@ -2,19 +2,8 @@
 # This ensures Jekyll reads the file to be transformed into CSS later
 ---
 
-//Import dependencies
-@import "siimple/scss/_variables.scss";
-@import "siimple-colors/scss/_all.scss";
-
-//Reset some siimple styles
-//Reset headings
-.siimple-h {
-    @each $heading-number,$heading-variables in $siimple-default-headings {
-        &#{$heading-number} {
-            font-weight: normal !important;
-        }
-    }
-}
+//Import theme
+@import "{{ site.theme }}";
 
 //Import partials
 @import "content.scss";
