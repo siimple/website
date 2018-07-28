@@ -1,0 +1,10 @@
+{
+    "projects": [
+        {"title": "siimple", "url": "https://docs.siimple.xyz"}
+    ],
+    "community": [
+        {"title": "GitHub", "description": "Our repositories on GitHub", "url": "https://github.com/siimple"},
+        {"title": "Twitter", "description": "Follow <strong>@siimplecss</strong> on Twitter", "url": "https://twitter.com/siimplecss"},
+        {"title": "Gitter", "description": "Join our chat room on Gitter", "url": "https://gitter.im/siimple"}
+    ]
+}
