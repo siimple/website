@@ -1,15 +1,24 @@
 .sw-section {
     display: block;
     //background: $siimple-grey-light;
-    color: $siimple-navy;
-    padding-top: 40px;
-    padding-bottom: 70px;
+    padding-top: 140px;
+    padding-bottom: 140px;
     //Section colors
     &--white {
+        color: $siimple-navy;
         background-color: $siimple-default-white;
     }
     &--grey {
+        color: $siimple-navy;
         background-color: $siimple-grey-light;
+    }
+    &--red {
+        color: $siimple-white;
+        background-color: $siimple-red;
+    }
+    &--red &-btn {
+        background-color: $siimple-white;
+        color: $siimple-red;
     }
     //Section image
     &-image {
@@ -22,13 +31,6 @@
         background-size: 300px 150px;
         background-position: center center;
         background-repeat: no-repeat;
-        //Images
-        &--cookies {
-            background-image: url("../images/cookies.svg");
-        }
-        &--privacy {
-            background-image: url("../images/privacy.svg");
-        }
     }
     //Section title
     &-title {
@@ -45,10 +47,11 @@
         margin-top: 5px;
         opacity: 0.8;
     }
-    //Contribute button
+    //Section button
     &-btn {
+        margin-top: 25px;
         display: inline-block;
-        font-size: 20px;
+        font-size: 18px;
         text-decoration: none;
         color: $siimple-white;
         //background-color: $siimple-blue;
@@ -58,6 +61,7 @@
         padding-right: 15px;
         transition: all 0.3s;
         &:hover {
+            color: $siimple-white;
             cursor: pointer;
             opacity: 0.7;
         }
