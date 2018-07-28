@@ -20,6 +20,7 @@ build:
 	@logger -s "Copying assets"
 	@#cp -r ./assets ./_site/assets
 	cp bower_components/siimple/dist/siimple.min.css ./_site/assets/css/
+	cp bower_components/siimple-colors/dist/siimple-colors.min.css ./_site/assets/css/
 	@#logger -s "Building website styles"
 	@#${NODE_BIN}/sass --load-path="./bower_components/" ./siimple-website.scss ./_site/assets/siimple-website.css
 	@logger -s "Build finished"
