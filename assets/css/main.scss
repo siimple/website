@@ -11,12 +11,15 @@
     overflow-x: auto !important;
 }
 
+//Hack to change the navbar styles
+.siimple-navbar .siimple-navbar-title, 
+.siimple-navbar .siimple-navbar-item {
+    color: siimple-color("blue") !important;
+}
+
 //Import partials
-@import "content.scss";
-//@import "contribute.scss";
 @import "features.scss";
 @import "footer.scss";
-@import "navbar.scss";
 @import "section.scss";
 @import "welcome.scss";
 
