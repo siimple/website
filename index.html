@@ -3,30 +3,51 @@ layout: "default"
 title: "siimple: minimal and responsive CSS Framework for flat and clean designs"
 root: "./"
 ---
-
-<div class="sw-welcome">
-    <div class="siimple-jumbotron siimple-jumbotron--large sw-welcome-jumbotron">
-        <div class="sw-welcome-container">
-            <div class="sw-welcome-title">Flat.</div>
-            <div class="sw-welcome-title">Minimal.</div>
-            <div class="sw-welcome-title">Different.</div>
-            <div class="sw-welcome-title"><strong>siimple</strong>.</div>
-        </div>
+<title>{{ page.title }}</title>
+<div class="siimple-jumbotron siimple-jumbotron--large sw-welcome" align="center">
+    <div class="sw-welcome-title1">Flat, minimal and different.</div>
+    <div class="sw-welcome-title2">That is <strong>siimple</strong>.</div>
+    <div class="sw-welcome-buttons">
+        <a href="" class="siimple-btn siimple-btn--primary">Get started</a>
+        <a href="" class="siimple-btn siimple-btn--primary">Download</a>
     </div>
+    <div class="sw-welcome-detail">Current version: <strong>{{ site.version }}</strong></div>
 </div>
-<div class="siimple-content siimple-content--large sw-features" align="center">
-    <div class="sw-features-title">Why <strong>siimple</strong>?</div>
-    <div class="siimple-grid-row">
+<div class="siimple-content siimple-content--large sw-section sw-section--grey" align="center">
+    <div class="siimple-h2">Why <strong>siimple</strong>?</div>
+    <div class="sw-section-description">
+        Build responsive, flat and clean web designs with the minimalist and flexible <strong>siimple</strong> CSS framework. 
+    </div>
+    <div class="siimple-grid-row sw-features">
         {% for feature_id in site.data.features.all %}
         {% assign feature = site.data.features[feature_id] %} 
         <div class="siimple-grid-col siimple-grid-col--4 siimple-grid-col-sm--12 sw-features-item">
             <img class="sw-features-item-image" src="{{ feature.image }}">
             <div class="sw-features-item-title">{{ feature.title }}</div>
-            <div class="sw-features-description">{{ feature.description }}</div>
+            <div class="sw-features-item-description">{{ feature.description }}</div>
         </div>
         {% endfor %}
     </div>
-    <div class="sw-features-subtitle">Get started now!</div>
-    <a href="{{ site.documentation_url }}" class="sw-features-btn">Read the documentation</a>
+    <div class="sw-section-description">
+        Get started with <strong>siimple</strong> reading the documentation!
+    </div>
+    <div align="center">
+        <a href="{{ site.links.documentation }}" class="siimple-btn siimple-btn--primary">
+            Let's get started with <strong>siimple</strong>
+        </a>
+    </div>
+</div>
+<div class="siimple-content siimple-content--large sw-section sw-section--white" align="center">
+    <div class="sw-section-image" style="background-image:url('./assets/images/contribute.svg');"></div>
+    <div class="siimple-h2">Contributing to <strong>siimple</strong></div>
+    <div class="sw-section-description">
+        If you found a bug, have any questions or want to contribute, please feel free to open an issue or send a pull request to our repository on GitHub. 
+        We appreciate each review or pull request for improving the siimple framework.
+    </div>
+    <div>
+        <a href="{{ site.links.contribute }}" class="siimple-btn siimple-btn--primary" target="_blank">
+            Contribute to <strong>siimple</strong>
+        </a>
+    </div>
 </div>
 
