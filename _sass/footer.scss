@@ -1,62 +1,28 @@
 //Footer class
 .sw-footer {
     display: block;
-    background-color: $siimple-navy;
-    color: $siimple-white;
-    //Footer item
-    &-item {
-        vertical-align: top;
-        &-title {
-            font-weight: bold;
-            font-size: 16px;
-            margin-bottom: 5px;
-            border-bottom: 1px solid rgba($siimple-white, 0.2);
-            padding-bottom: 3px;
-            &:not(:first-child) {
-                margin-top: 25px;
-            }
-        }
-        //Footer link
-        &-link {
-            display: block;
-            text-decoration: none !important;
-            color: $siimple-white !important;
-            //margin-bottom: 1px;
-            //Link title
-            &-title {
-                height: 22px;
-                line-height: 22px;
-                opacity: 0.7;
-                transition: opacity 0.3s;
-                cursor: pointer;
-                &::before {
-                    content: "\00B7";
-                    color: $siimple-white;
-                    padding-right: 8px;
-                }
-            }
-            //Link description
-            &-description {
-                display: block;
-                font-size: 12px;
-                padding-left: 10px;
-                opacity: 0.4;
-                margin-bottom: 6px;
-            }
-            //Link hover 
-            &:hover > &-title {
-                opacity: 1.0 !important;
-            }
-        }
-    }
-    //Legal messages
-    &-legal {
+    //background-color: $siimple-navy;
+    //color: $siimple-white;
+    //Footer group
+    &-group {
         display: block;
+        text-transform: uppercase;
+        color: siimple-default-color("dark", "light");
+        text-decoration: none;
         font-size: 13px;
-        line-height: 20px;
-        opacity: 0.5;
-        text-align: center;
-        margin-top: 20px;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+    //Footer link
+    &-link {
+        //Link description
+        &-description {
+            display: block;
+            font-size: 12px;
+            font-weight: normal;
+            margin-bottom: 3px;
+            color: siimple-default-color("dark", "light") !important;
+        }
     }
 }
 
