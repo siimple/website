@@ -16,6 +16,9 @@
 .siimple-navbar .siimple-navbar-item {
     color: siimple-color("blue") !important;
 }
+.siimple-navbar .siimple-navbar-subtitle {
+    display: none !important;
+}
 
 //Import partials
 @import "features.scss";
