@@ -1,39 +1,20 @@
-<div class="siimple-footer siimple-footer--large sw-footer">
-    <div class="siimple-grid siimple-grid-row">
-        <div class="sw-footer-item siimple-grid-col siimple-grid-col--sm-12 siimple-grid-col--6">
-            <div class="sw-footer-item-title">Main projects</div>
-            {% for project_id in site.footer_projects %}
-            {% assign project = site.data.projects[project_id] %}
-            <a href="{{ project.url }}" class="sw-footer-item-link">
-                <div class="sw-footer-item-link-title">{{ project.name }}</div>
-                <div class="sw-footer-item-link-description">{{ project.description }}</div>
-            </a>
-            {% endfor %}
-        </div>
-        <div class="sw-footer-item siimple-grid-col siimple-grid-col--sm-12 siimple-grid-col--6">
-            <div class="sw-footer-item-title">Community</div>
-            {% for social_id in site.footer_social %}
-            {% assign social = site.data.social[social_id] %}
-            <a href="{{ social.url }}" class="sw-footer-item-link" target="_blank">
-                <div class="sw-footer-item-link-title">{{ social.name }}</div>
-                <div class="sw-footer-item-link-description">{{ social.description }}</div>
-            </a>
-            {% endfor %}
-        </div>
-        <!--
-        <div class="sw-footer-item siimple-grid-col siimple-grid-col--sm-12 siimple-grid-col--4">
-            <div class="sw-footer-item-title">Resources</div>
-            {% for link_id in site.footer_links %}
-            {% assign link = site.data.links[link_id] %}
-            <a href="{{ page.root }}{{ link.url }}" class="sw-footer-item-link">
-                <div class="sw-footer-item-link-title">{{ link.name }}</div>
-            </a>
-            {% endfor %}
-        </div>
-        -->
+<div class="siimple-grid-row">
+    <div class="siimple-grid-col siimple-grid-col--6 siimple-grid-col--sm-12">
+        <div class="sd-footer-title">{{ site.title }}</div>
     </div>
-    <div class="sw-footer-legal">
-        &copy; 2015-2018 <strong>siimple</strong>
+    <div class="siimple-grid-col siimple-grid-col--3 siimple-grid-col--sm-12">
+        <div class="sw-footer-group">Main projects</div>
+        {% for project in site.data.footer.projects %}
+        <a href="{{ project.url }}" class="sd-footer-link">{{ project.title }}</a><br>
+        {% endfor %}
+    </div>
+    <div class="siimple-grid-col siimple-grid-col--3 siimple-grid-col--sm-12">
+        <div class="sw-footer-group">Community</div>
+        {% for link in site.data.footer.community %}
+        <a href="{{ link.url }}" class="sd-footer-link" target="_blank">{{ link.title }}
+            <div class="sw-footer-link-description">{{ link.description }}</div>
+        </a>
+        {% endfor %}
     </div>
 </div>
 
