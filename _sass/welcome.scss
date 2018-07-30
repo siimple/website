@@ -1,33 +1,45 @@
 //Welcome class
 .sw-welcome {
     display: block;
-    background: linear-gradient(135deg, $siimple-mint-dark 0%,$siimple-blue-dark 100%);
-    color: $siimple-white;
-    //Welcome jumbotron
-    &-jumbotron {
-        padding-top: 10px !important;
-        padding-bottom: 10px !important;
-    }
+    //padding-top: 100px;
+    //padding-bottom: 100px;
+    //background: linear-gradient(135deg, $siimple-mint-dark 0%,$siimple-blue-dark 100%);
+    background-color: siimple-color("grey");
+    color: siimple-color("blue");
     //Welcome container
     &-container {
         overflow: hidden;
-        background-color: transparent !important;
-        background-image: url('../images/logo.png');
-        background-repeat: no-repeat;
-        background-position: center right;
-        background-size: 450px 450px;
+        //background-color: transparent !important;
+        //background-image: url('../images/logo.png');
+        //background-repeat: no-repeat;
+        //background-position: center right;
+        //background-size: 450px 450px;
         padding-top: 60px;
         padding-bottom: 60px;
         //opacity: 0.6;
-        @media (max-width: 750px) {
-            background-image:none;
-        }
+        //@media (max-width: 750px) {
+        //    background-image:none;
+        //}
     }
-    //Welcome title
-    &-title {
+    //Welcome title 1
+    &-title1 {
+        font-size: 45px;
+        line-height: 60px;
+    }
+    //Welcome title 2
+    &-title2 {
         font-size: 70px;
         line-height: 90px;
-        color: $siimple-white;
+    }
+    //Welcome buttons
+    &-buttons {
+        margin-top: 30px;
+    }
+    //Detail
+    &-detail {
+        margin-top: 10px;
+        font-size: 14px;
+        line-height: 23px;
     }
 }
 
