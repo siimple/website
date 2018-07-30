@@ -1,28 +1,42 @@
-# Build configuration
+# Build settings
 env: "production"
+permalink: "none" 
 exclude: ["README.md","LICENSE","app.yaml","dispatch.yaml","bower_components/"]
+
+# Theme configutation
+theme: "siimple-theme"
+color: "grey"
+
+# Sass build settings
 sass:
-    load_paths:
-        - _sass
-        - bower_components
+    style: "compressed"
+    load_paths: ["bower_components", "_sass"]
 
-# Website configuration
+# Site settings
 title: "siimple"
+version: "3.1.1"
+url: "https://www.siimple.xyz"
 
-# Navbar configuration
-navbar_title: "siimple"
-navbar_social: ["twitter", "github"]
+# Links
+links: 
+    contribute: "https://github.com/siimple/siimple/blob/develop/.github/CONTRIBUTING.md"
+    documentation: "https://docs.siimple.xyz"
+    plugins: "https://plugins.siimple.xyz"
+    downloads: "https://github.com/siimple/siimple/releases"
 
-# Footer configuration
-footer_projects: ["siimple"]
-footer_social: ["github", "twitter", "gitter"]
-footer_links: ["privacy"]
+# Navbar settings
+navbar:
+    - title: "Docs"
+      url: "https://docs.siimple.xyz"
 
-# Urls
-documentation_url: "https://docs.siimple.xyz"
-contribute_url: "https://github.com/siimple/siimple/blob/develop/.github/CONTRIBUTING.md"
+# Footer settings
+footer:
+    privacy_url: "https://www.siimple.xyz/legal/privacy.html"
+    cookies_url: "https://www.siimple.xyz/legal/cookies.html"
 
-# Email contacts
-support_email: "support@siimple.xyz"
-privacy_email: "privacy@siimple.xyz"
+# Cookies settings
+cookies:
+    analytics: "UA-70800807-2"
+    path: "/"
+    domain: ".siimple.xyz"
 
