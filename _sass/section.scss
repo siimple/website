@@ -1,8 +1,8 @@
 .sw-section {
     display: block;
     //background: $siimple-grey-light;
-    padding-top: 140px;
-    padding-bottom: 140px;
+    padding-top: 100px !important;
+    padding-bottom: 100px !important;
     //Section colors
     &--white {
         color: $siimple-navy;
@@ -11,14 +11,6 @@
     &--grey {
         color: $siimple-navy;
         background-color: $siimple-grey-light;
-    }
-    &--red {
-        color: $siimple-white;
-        background-color: $siimple-red;
-    }
-    &--red &-btn {
-        background-color: $siimple-white;
-        color: $siimple-red;
     }
     //Section image
     &-image {
@@ -41,30 +33,10 @@
     //Description
     &-description {
         display: block;
-        font-size: 18px;
-        //color: $siimple-blue-extra-light;
-        line-height: 26px;
-        margin-top: 5px;
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 15px;
         opacity: 0.8;
-    }
-    //Section button
-    &-btn {
-        margin-top: 25px;
-        display: inline-block;
-        font-size: 18px;
-        text-decoration: none;
-        color: $siimple-white;
-        //background-color: $siimple-blue;
-        border-radius: 5px;
-        padding: 10px;
-        padding-left: 15px;
-        padding-right: 15px;
-        transition: all 0.3s;
-        &:hover {
-            color: $siimple-white;
-            cursor: pointer;
-            opacity: 0.7;
-        }
     }
 }
 
