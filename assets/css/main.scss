@@ -10,12 +10,6 @@
     display: block !important;
     overflow-x: auto !important;
 }
-
-//Hack to change the navbar styles
-.siimple-navbar .siimple-navbar-title, 
-.siimple-navbar .siimple-navbar-item {
-    color: siimple-color("blue") !important;
-}
 .siimple-navbar .siimple-navbar-subtitle {
     display: none !important;
 }
