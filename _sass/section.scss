@@ -41,5 +41,16 @@
         margin-bottom: 20px;
         opacity: 0.8;
     }
+    //Section rule
+    &-rule {
+        display: block;
+        max-width: 250px;
+        margin-left: auto;
+        margin-right: auto;
+        height: 3px;
+        background-color: siimple-color("blue");
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
 }
 
