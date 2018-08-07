@@ -14,9 +14,9 @@ root: "./"
     </div>
     <div class="sw-welcome-detail">Current version: <strong>{{ site.version }}</strong></div>
 </div>
-<div class="siimple-content siimple-content--large sw-section sw-section--grey" align="center">
+<div class="siimple-content siimple-content--large sd-section siimple--bg-grey-light" align="center">
     <div class="siimple-h2">Why  <strong>siimple</strong>?</div>
-    <div class="sw-section-description">
+    <div class="sd-section-description">
         Build responsive, flat and clean web designs with the minimalist and flexible <strong>siimple</strong> CSS framework. 
     </div>
     <div class="siimple-grid-row sw-features">
@@ -30,21 +30,35 @@ root: "./"
         {% endfor %}
     </div>
 </div>
-<div class="siimple-content siimple-content--large sw-section siimple--bg-primary siimple--color-white" align="center">
-    <div class="siimple-h3 siimple--color-white">Let's get started with <strong>siimple</strong></div>
-    <div class="sw-section-description">
+<div class="siimple-content siimple-content--large sd-section" align="center">
+    <div class="siimple-h3">Let's get started with <strong>siimple</strong></div>
+    <div class="sd-section-description">
         You can get started with <strong>siimple</strong> reading the official documentation: learn how to add <strong>siimple</strong> to your project and discover how to style your buttons, forms and more!
     </div>
     <div align="center">
-        <a href="{{ site.links.documentation }}" class="siimple-btn siimple--color-primary siimple--bg-white">
+        <a href="{{ site.links.documentation }}" class="siimple-btn siimple-btn--primary">
             Read the documentation
         </a>
     </div>
 </div>
-<div class="siimple-content siimple-content--large sw-section sw-section--white" align="center">
-    <div class="sw-section-image" style="background-image:url('./assets/images/contribute.svg');"></div>
+<div class="siimple-content siimple-content--large sd-section siimple--bg-grey-light">
+    <div class="siimple-h3" align="center">What people say about <strong>siimple</strong>?</div>
+    <div class="siimple-grid-row docs-reviews">
+        {% for review in site.data.reviews limit:3 %}
+        <div class="siimple-grid-col siimple-grid-col--4 siimple-grid-col--sm-12">
+            <div class="siimple-h5">{{ review.site }}</div>
+            <div class="siimple-paragraph docs-reviews-content">
+                <strong class="docs-reviews-quote">&#8220;</strong> {{ review.content }} <strong class="docs-reviews-quote">&#8221;</strong>
+            </div>
+            <a href="{{ review.url }}" class="siimple-link docs-reviews-link" target="_blank">Read more <strong>&raquo;</strong></a>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+<div class="siimple-content siimple-content--large sd-section" align="center">
+    <div class="sd-section-image" style="background-image:url('./assets/images/contribute.svg');"></div>
     <div class="siimple-h3">Make <strong>siimple</strong> better!</div>
-    <div class="sw-section-description">
+    <div class="sd-section-description">
         Contribute to our repository on <strong>GitHub</strong>. Bug reports, improvements and new ideas are always welcome!
     </div>
     <div>
