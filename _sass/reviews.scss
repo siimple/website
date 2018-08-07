@@ -1,0 +1,20 @@
+.docs-reviews {
+    padding-top: 20px;
+    padding-bottom: 0px;
+    //Quote
+    &-quote {
+        font-size: 18px;
+        font-weight: bold;
+        color: $siimple-navy-extra-dark;
+    }
+    //Content
+    &-content {
+        opacity: 0.8;
+        margin-bottom: 10px !important;
+        //padding-right: 10px;
+    }
+    //Link
+    &-link {
+        font-size: 14px !important;
+    }
+}
