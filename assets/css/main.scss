@@ -21,6 +21,7 @@
     border-radius: 5px;
     background-color: siimple-default-color("light", "light");
     padding: 15px;
+    width: calc(100% - 30px) !important;
     font-weight: bold;
     &-content {
         background-color: siimple-default-color("light");
