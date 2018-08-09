@@ -16,6 +16,18 @@
     color: siimple-default-color("warning", "dark");
 }
 
+//Grid example
+.example-grid {
+    border-radius: 5px;
+    background-color: siimple-default-color("light", "light");
+    padding: 15px;
+    &-content {
+        background-color: siimple-default-color("light");
+        padding: 20px;
+        text-align: center;
+        border-radius: 5px;
+    }
+}
 //Rewrite some siimple components
 .siimple-table {
     display: block !important;
