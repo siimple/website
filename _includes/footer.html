@@ -1,20 +1,16 @@
 <div class="siimple-grid-row">
-    <div class="siimple-grid-col siimple-grid-col--6 siimple-grid-col--sm-12">
+    <div class="siimple-grid-col siimple-grid-col--3 siimple-grid-col--sm-12">
         <div class="sd-footer-title">{{ site.title }}</div>
     </div>
+    {% for group in site.data.footer %}
     <div class="siimple-grid-col siimple-grid-col--3 siimple-grid-col--sm-12">
-        <div class="sw-footer-group">Main projects</div>
-        {% for project in site.data.footer.projects %}
-        <a href="{{ project.url }}" class="sd-footer-link">{{ project.title }}</a><br>
-        {% endfor %}
-    </div>
-    <div class="siimple-grid-col siimple-grid-col--3 siimple-grid-col--sm-12">
-        <div class="sw-footer-group">Community</div>
-        {% for link in site.data.footer.community %}
+        <div class="sw-footer-group">{{ group.title }}</div>
+        {% for link in group.links %}
         <a href="{{ link.url }}" class="sd-footer-link" target="_blank">{{ link.title }}
             <div class="sw-footer-link-description">{{ link.description }}</div>
         </a>
         {% endfor %}
     </div>
+    {% endfor %}
 </div>
 
