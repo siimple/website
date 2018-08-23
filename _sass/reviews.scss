@@ -1,6 +1,11 @@
 .docs-reviews {
     padding-top: 20px;
     padding-bottom: 0px;
+    //Column
+    &-column {
+        min-height: 190px;
+        position: relative;
+    }
     //Quote
     &-quote {
         font-size: 18px;
@@ -10,7 +15,12 @@
     //Content
     &-content {
         opacity: 0.8;
-        //margin-bottom: 10px !important;
+        //margin-bottom: 0px !important;
         //padding-right: 10px;
+    }
+    //Button 
+    &-btn {
+        position: absolute;
+        bottom: 0px;
     }
 }
