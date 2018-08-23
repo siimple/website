@@ -133,12 +133,14 @@ root: "./"
     <div class="siimple-h3" align="center">What people say about <strong>siimple</strong>?</div>
     <div class="siimple-grid-row docs-reviews">
         {% for review in site.data.reviews limit:3 %}
-        <div class="siimple-grid-col siimple-grid-col--4 siimple-grid-col--sm-12">
+        <div class="siimple-grid-col siimple-grid-col--4 siimple-grid-col--sm-12 docs-reviews-column">
             <div class="siimple-h5">{{ review.site }}</div>
             <div class="siimple-paragraph docs-reviews-content">
                 <strong class="docs-reviews-quote">&#8220;</strong> {{ review.content }} <strong class="docs-reviews-quote">&#8221;</strong>
             </div>
-            <a href="{{ review.url }}" class="siimple-btn siimple-btn--primary" target="_blank">Read more <strong>&raquo;</strong></a>
+            <a href="{{ review.url }}" class="siimple-btn siimple-btn--primary docs-reviews-btn" target="_blank">
+                Read more <strong>&raquo;</strong>
+            </a>
         </div>
         {% endfor %}
     </div>
