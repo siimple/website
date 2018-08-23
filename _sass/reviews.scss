@@ -3,7 +3,7 @@
     padding-bottom: 0px;
     //Column
     &-column {
-        min-height: 190px;
+        min-height: 210px;
         position: relative;
     }
     //Quote
@@ -21,6 +21,6 @@
     //Button 
     &-btn {
         position: absolute;
-        bottom: 0px;
+        bottom: 15px;
     }
 }
