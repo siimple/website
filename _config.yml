@@ -28,6 +28,7 @@ links:
 navbar:
     - title: "Docs"
       url: "https://docs.siimple.xyz"
+      target: "_parent"
 
 # Footer settings
 footer:
