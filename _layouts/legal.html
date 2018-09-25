@@ -2,8 +2,6 @@
 layout: "default"
 ---
 
-{% include base.html %}
-<title>{{ page.title }} | {{ site.title }}</title>
 <div class="siimple-jumbotron siimple-jumbotron--large siimple--color-white siimple--bg-blue" align="center">
     <div class="siimple-jumbotron-title">Legal resources</div>
     <div class="siimple-jumbotron-subtitle">
@@ -16,7 +14,7 @@ layout: "default"
             <div class="siimple-list siimple-list--hover">
                 {% for post in site.posts reversed %}
                 {% if post.category == "legal" %}
-                <a class="siimple-list-item {% if post.title == page.title %}siimple-list-item--selected{% endif %}" href="{{ base }}{{ post.url }}">
+                <a class="siimple-list-item {% if post.title == page.title %}siimple-list-item--selected{% endif %}" href="{{ post.url }}">
                     <div class="siimple-list-title">{{ post.title }}</div>
                     <div class="siimple-list-description">{{ post.description }}</div>
                 </a>
