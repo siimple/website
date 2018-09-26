@@ -5,17 +5,6 @@
 //Import theme
 @import "{{ site.theme }}";
 
-//Code colors
-.b {
-    color: siimple-default-color("primary", "dark");
-}
-.g {
-    color: siimple-default-color("success", "dark");
-}
-.y {
-    color: siimple-default-color("warning", "dark");
-}
-
 //Grid example
 .example-grid {
     border-radius: 5px;
@@ -40,8 +29,6 @@
 }
 
 //Import partials
-@import "features.scss";
-@import "footer.scss";
 @import "reviews.scss";
 @import "welcome.scss";
 
