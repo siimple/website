@@ -19,13 +19,13 @@ root: "./"
     <div class="theme-section-description">
         Build responsive, flat and clean web designs with the minimalist and flexible <strong>siimple</strong> CSS framework. 
     </div>
-    <div class="siimple-grid-row sw-features">
+    <div class="siimple-grid-row">
         {% for feature_id in site.data.features.all %}
         {% assign feature = site.data.features[feature_id] %} 
-        <div class="siimple-grid-col siimple-grid-col--4 siimple-grid-col-sm--12 sw-features-item">
-            <img class="sw-features-item-image" src="{{ feature.image }}">
-            <div class="sw-features-item-title">{{ feature.title }}</div>
-            <div class="sw-features-item-description">{{ feature.description }}</div>
+        <div class="siimple-grid-col siimple-grid-col--4 siimple-grid-col-sm--12 theme-feature">
+            <img class="theme-feature-image" src="{{ feature.image }}">
+            <div class="theme-feature-title">{{ feature.title }}</div>
+            <div class="theme-feature-description">{{ feature.description }}</div>
         </div>
         {% endfor %}
     </div>
