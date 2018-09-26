@@ -1,43 +1,29 @@
-# Build settings
-env: "production"
-permalink: "none" 
-exclude: ["README.md","LICENSE","app.yaml","dispatch.yaml","bower_components/"]
-
-# Theme configutation
-theme: "siimple-theme"
-color: "blue"
-
-# Sass build settings
-sass:
-    style: "compressed"
-    load_paths: ["bower_components", "_sass"]
-
-# Site settings
+## Site settings
+##############################################
 title: "siimple"
 version: "3.1.1"
 url: "https://www.siimple.xyz"
-
-# Links
-links: 
-    contribute: "https://github.com/siimple/siimple/blob/develop/.github/CONTRIBUTING.md"
-    documentation: "https://docs.siimple.xyz"
-    plugins: "https://plugins.siimple.xyz"
-    downloads: "https://github.com/siimple/siimple/releases"
-
-# Navbar settings
-navbar:
+## Theme configuration
+color: "blue"
+## Navbar links
+links:
     - title: "Docs"
       url: "https://docs.siimple.xyz"
-      target: "_parent"
-
-# Footer settings
-footer:
-    privacy_url: "https://www.siimple.xyz/legal/privacy.html"
-    cookies_url: "https://www.siimple.xyz/legal/cookies.html"
-
-# Cookies settings
+## Cookies settings
 cookies:
     analytics: "UA-70800807-2"
     path: "/"
     domain: ".siimple.xyz"
+
+
+## Build settings
+##############################################
+env: "production"
+permalink: "none" 
+theme: "siimple-theme"
+exclude: ["README.md","LICENSE","app.yaml","dispatch.yaml","bower_components/","node_modules/"]
+# Sass build settings
+sass:
+    style: "compressed"
+    load_paths: ["bower_components", "_sass"]
 
