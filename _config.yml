@@ -14,7 +14,7 @@ links:
 ## Theme configuration
 theme_config:
     color: "blue"
-    custom_styles: ["/assets/css/main.css"]
+    custom_styles: ["/assets/css/main.css", "/assets/css/siimple-colors.min.css"]
     changes_url: "https://github.com/siimple/website/issues/new"
     analytics: "UA-70800807-2"
     legal_urls:
@@ -27,5 +27,5 @@ theme_config:
 env: "production"
 permalink: "none"
 theme: "siimple-theme"
-exclude: ["README.md","LICENSE","app.yaml","dispatch.yaml","bower_components/","node_modules/"]
+exclude: ["README.md","LICENSE","app.yaml","dispatch.yaml","bower_components/","node_modules/","package.json","bower.json"]
 
