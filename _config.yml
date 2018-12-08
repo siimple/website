@@ -1,29 +1,31 @@
 ## Site settings
 ##############################################
 title: "siimple"
-version: "3.1.1"
+description: "The homepage of <strong>siimple</strong>."
+version: "3.2.0"
+author: "Josemi Juanes"
 url: "https://www.siimple.xyz"
-## Theme configuration
-color: "blue"
-## Navbar links
+license: "MIT License"
+repository: "https://github.com/siimple/website"
 links:
     - title: "Docs"
       url: "https://docs.siimple.xyz"
-## Cookies settings
-cookies:
+      target: "_blank"
+## Theme configuration
+theme_config:
+    color: "blue"
+    custom_styles: ["/assets/css/main.css"]
+    changes_url: "https://github.com/siimple/website/issues/new"
     analytics: "UA-70800807-2"
-    path: "/"
-    domain: ".siimple.xyz"
-
+    legal_urls:
+        cookies: "https://www.siimple.xyz/legal/cookies.html"
+        privacy: "https://www.siimple.xyz/legal/privacy.html"
+    copyright: "&copy; 2015-present <strong>siimple</strong>"
 
 ## Build settings
 ##############################################
 env: "production"
-permalink: "none" 
+permalink: "none"
 theme: "siimple-theme"
 exclude: ["README.md","LICENSE","app.yaml","dispatch.yaml","bower_components/","node_modules/"]
-# Sass build settings
-sass:
-    style: "compressed"
-    load_paths: ["bower_components", "_sass"]
 
