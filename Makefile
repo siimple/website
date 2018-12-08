@@ -19,9 +19,9 @@ build:
 	cp bower_components/siimple/dist/siimple.min.css ./_site/assets/css/
 	cp bower_components/siimple-colors/dist/siimple-colors.min.css ./_site/assets/css/
 	# Building website styles
-	${NODE_BIN}/sass --load-path="./bower_components/" ./_sass/main.scss ./_site/assets/main.css
+	${NODE_BIN}/sass --load-path="./bower_components/" ./_sass/main.scss ./_site/assets/css/main.css
 	# Generating image sprites
-	${NODE_BIN}/pngsprite --inputPNGFolder ./_images/ --outputPNGFile ./_site/assets/images/icons.png
+	${NODE_BIN}/pngsprite --inputPNGFolder ./_images/ --outputPNGFile ./_site/assets/images/icons.png --cssIconSize 80 --cssOutput ./_site/assets/css/icons.css --debug --cssNamespace docs-icons
 
 # Serve the site
 serve:
