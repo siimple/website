@@ -13,12 +13,15 @@ install:
 build:
 	@# Building website with Jekyll
 	bundle exec jekyll build
-	@# Copying assets
-	@#cp -r ./assets ./_site/assets
+	# Creating assets folder
+	mkdir -p ./_site/assets/css ./_site/assets/images
+	# Copying styles
 	cp bower_components/siimple/dist/siimple.min.css ./_site/assets/css/
 	cp bower_components/siimple-colors/dist/siimple-colors.min.css ./_site/assets/css/
-	@# Building website styles
-	@#${NODE_BIN}/sass --load-path="./bower_components/" ./siimple-website.scss ./_site/assets/siimple-website.css
+	# Building website styles
+	${NODE_BIN}/sass --load-path="./bower_components/" ./sass/main.scss ./_site/assets/main.css
+	# Generating image sprites
+	${NODE_BIN}/pngsprite --inputPNGFolder ./_images/ --outputPNGFile ./_site/assets/images/icons.png
 
 # Serve the site
 serve:
