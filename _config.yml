@@ -10,7 +10,6 @@ repository: "https://github.com/siimple/website"
 links:
     - title: "Docs"
       url: "https://docs.siimple.xyz"
-      target: "_blank"
 ## Theme configuration
 theme_config:
     color: "blue"
