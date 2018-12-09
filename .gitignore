@@ -47,4 +47,6 @@ _site
 *.iml
 *.swp
 .sass-cache
+package-lock.json
+Gemfile.lock
 
