@@ -1,4 +1,6 @@
 dispatch:
 - url: "docs.siimple.xyz/*"
-  service: docs
+  service: beta
+- url: "colors.siimple.xyz/*"
+  service: beta
 
