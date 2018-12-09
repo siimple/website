@@ -2,7 +2,7 @@
     "name": "siimple-website",
     "private": true,
     "dependencies": {
-        "siimple": "siimple/siimple#develop",
+        "siimple": "siimple/siimple#v3.2.0",
         "siimple-colors": "siimple/siimple-colors#develop"
     }
 }
