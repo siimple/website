@@ -3,6 +3,8 @@ layout: "default"
 title: "siimple: minimal and responsive CSS Framework for flat and clean designs"
 root: "./"
 ---
+<!-- Icons -->
+<link rel="stylesheet" href="/assets/css/icons.css">
 <title>{{ page.title }}</title>
 <div class="siimple-jumbotron siimple-jumbotron--large siimple--color-white siimple--bg-primary" align="center">
     <div class="docs-welcome-title1">
@@ -27,7 +29,7 @@ root: "./"
         {% for feature_id in site.data.features.all %}
         {% assign feature = site.data.features[feature_id] %} 
         <div class="siimple-grid-col siimple-grid-col--4 siimple-grid-col-sm--12 theme-feature">
-            <img class="theme-feature-image" src="{{ feature.image }}">
+            <div class="theme-feature-image docs-icons docs-icons-{{ feature_id }}"></div>
             <div class="theme-feature-title">{{ feature.title }}</div>
             <div class="theme-feature-description">{{ feature.description }}</div>
         </div>
@@ -132,7 +134,7 @@ root: "./"
 </div>
 <div class="siimple-content siimple-content--large theme-section siimple--bg-grey-light">
     <div align="center">
-        <img class="theme-section-icon" src="./assets/images/announcement.png">
+        <div class="theme-section-icon docs-icons docs-icons-announcement"></div>
     </div>
     <div class="siimple-h3" align="center">What people say about <strong>siimple</strong>?</div>
     <div class="siimple-grid-row docs-reviews">
@@ -150,7 +152,7 @@ root: "./"
     </div>
 </div>
 <div class="siimple-content siimple-content--large theme-section" align="center">
-    <img class="theme-section-image" src="./assets/images/contribute.svg">
+    <div class="docs-icons docs-icons-contribute"></div>
     <div class="siimple-h3">Contribute to <strong>siimple</strong></div>
     <div class="theme-section-description">
         Contribute to our repository on <strong>GitHub</strong>. Bug reports, improvements and new ideas are always welcome!
