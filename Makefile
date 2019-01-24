@@ -21,7 +21,7 @@ build:
 	# Building website styles
 	${NODE_BIN}/sass --load-path="./bower_components/" ./_sass/main.scss ./_site/assets/css/main.css
 	# Generating image sprites
-	${NODE_BIN}/pngsprite --inputPNGFolder ./_images/ --outputPNGFile ./_site/assets/images/icons.png --cssIconSize 80 --cssOutput ./_site/assets/css/icons.css --debug --cssNamespace docs-icons
+	${NODE_BIN}/pngsprite --inputPNGFolder ./_images/ --outputPNGFile ./_site/assets/images/icons.png --cssIconSize 80 --cssOutput ./_site/assets/css/icons.css --debug --cssNamespace website-icons
 
 # Serve the site
 serve:
